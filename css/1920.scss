@@ -267,10 +267,10 @@ a {
     .main-inbox {
       position: absolute;
       left: 0;
-      top: 250px;
-      width: 513px;
+      top: 13.021vw;
+      width: 26.719vw;
       height: auto;
-      padding: 20px 30px 45px 30px;
+      padding: 1.042vw 1.563vw 2.344vw 1.563vw;
       z-index: 2;
       background-image: url(../img/main/inbox-bg.png);
       background-repeat: no-repeat;
@@ -278,8 +278,8 @@ a {
       p {
         font-family: "Inter";
         font-weight: 400;
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 0.938vw;
+        line-height: 1.354vw;
         color: #ffffff;
         letter-spacing: -0.02em;
         a {
@@ -297,7 +297,7 @@ a {
       font-family: "Wild World";
       font-style: normal;
       font-weight: 500;
-      font-size: 58px;
+      font-size: 3.021vw;
       line-height: 2.708vw;
       color: #ffffff;
       width: 40.885vw;
@@ -308,20 +308,20 @@ a {
     .main-subtitle {
       position: absolute;
       top: 29.646vw;
-      width: 772px;
+      width: 40.208vw;
       left: 0;
       font-family: "Inter";
       font-style: normal;
       font-weight: 600;
-      font-size: 38px;
-      line-height: 48px;
+      font-size: 1.979vw;
+      line-height: 2.5vw;
       color: #ffffff;
       z-index: 3;
       letter-spacing: -0.02em;
     }
     .populacion-container {
       position: absolute;
-      right: 40px;
+      right: 2.083vw;
       top: 6.25vw;
       z-index: 3;
       .main-populacion {
@@ -337,11 +337,11 @@ a {
           font-family: "Inter";
           font-style: normal;
           font-weight: 400;
-          font-size: 18px;
-          line-height: 28px;
+          font-size: 0.938vw;
+          line-height: 1.458vw;
           border-radius: 0.417vw;
-          border-left: 1px solid #ff66c480;
-          border-right: 1px solid #ff66c480;
+          border-left: 0.052vw solid #ff66c480;
+          border-right: 0.052vw solid #ff66c480;
           width: 6.198vw;
           height: 2.552vw;
           display: inline-flex;
@@ -350,13 +350,13 @@ a {
         }
       }
       strong {
-        margin: 20px 0 0 0;
+        margin: 1.042vw 0 0 0;
         display: block;
         font-family: "Inter";
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 0.938vw;
+        line-height: 1.354vw;
         color: #ffffff;
         width: 20.833vw;
         letter-spacing: -0.02em;
@@ -432,6 +432,9 @@ a {
     width: 100%;
     height: 100vh;
     z-index: 11;
+    .begining-blur{
+      display: none;
+    }
     .beginning-container {
       width: 100%;
       height: 100vh;
@@ -611,22 +614,22 @@ a {
         font-family: "Wild World";
         font-style: normal;
         font-weight: 500;
-        font-size: 68px;
-        line-height: 88px;
+        font-size: 3.542vw;
+        line-height: 4.583vw;
         color: #ffffff;
         display: flex;
         span {
           font-family: "Inter";
           font-style: normal;
           font-weight: 500;
-          font-size: 18px;
-          line-height: 28px;
+          font-size: 0.938vw;
+          line-height: 1.458vw;
           letter-spacing: -0.02em;
           border-radius: 0.417vw;
           border-left: 0.052vw solid #ff66c4;
           border-right: 0.052vw solid #ff66c4;
           width: auto;
-          padding: 0 16px;
+          padding: 0 0.833vw;
           height: 2.552vw;
           display: inline-flex;
           align-items: center;
@@ -641,8 +644,8 @@ a {
         font-family: "Inter";
         font-style: normal;
         font-weight: 400;
-        font-size: 22px;
-        line-height: 32px;
+        font-size: 1.146vw;
+        line-height: 1.667vw;
         letter-spacing: -0.02em;
         color: #ffffff;
         opacity: 0;
@@ -650,7 +653,7 @@ a {
         transition: all 0.5s;
         span {
           display: block;
-          margin: 35px 0 0 0;
+          margin: 1.823vw 0 0 0;
         }
         &.active {
           opacity: 1;
@@ -856,8 +859,8 @@ a {
         font-family: "Inter";
         font-style: normal;
         font-weight: 600;
-        font-size: 22px;
-        line-height: 27px;
+        font-size: 1.146vw;
+        line-height: 1.406vw;
         color: #ff66c4;
         letter-spacing: -0.02em;
       }
@@ -866,8 +869,8 @@ a {
         font-family: "Inter";
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 0.938vw;
+        line-height: 1.354vw;
         letter-spacing: -0.02em;
         color: #ffffff;
         opacity: 0.6;
@@ -912,19 +915,19 @@ a {
   line-height: calc(88 / 68);
   font-family: "Wild World";
   color: #fff;
-  margin: 0 0 63px 0;
+  margin: 0 0 3.281vw 0;
 }
 .main-text__container {
   display: flex;
   flex-direction: column;
-  margin: 0 0 80px 0;
-  width: 50px;
-  gap: 30px;
-  width: 500px;
+  margin: 0 0 4.167vw 0;
+  width: 2.604vw;
+  gap: 1.563vw;
+  width: 26.042vw;
 }
 .main-text {
   display: block;
-  font-size: 18px;
+  font-size: 0.938vw;
   line-height: calc(42 / 30);
   font-family: "Inter";
   font-weight: 400;
@@ -1033,8 +1036,8 @@ a {
     position: absolute;
     top: -3.75vw;
     left: 36.948vw;
-    width: 826px;
-    height: 826px;
+    width: 43.021vw;
+    height: 43.021vw;
     z-index: -2;
     .wrapper-circle {
       overflow: hidden;
@@ -1078,12 +1081,12 @@ a {
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 0.938vw;
+  line-height: 1.458vw;
   letter-spacing: -0.02em;
   font-family: "Inter";
-  padding: 0 16px;
-  height: 44px;
+  padding: 0 0.833vw;
+  height: 2.292vw;
   border-width: 0vw 1px;
   border-style: solid;
   border-color: #ff4cbd;
@@ -1106,7 +1109,9 @@ a {
   height: 100%;
   margin-left: -0.052vw;
   transition: 1s background-size, 1s background-position;
-
+  .mintwaterway-blur{
+    display: none;
+  }
   #waterway-bg {
     position: absolute;
     left: 0vw;
@@ -1266,7 +1271,7 @@ a {
       color: #fff;
       text-decoration: none;
       opacity: 0.3;
-      transition: 1s font-size, 0.3s opacity;
+      transition: .55s font-size, 0.3s opacity;
       outline: none;
       &:hover {
         opacity: 1;
@@ -1303,8 +1308,8 @@ a {
     }
     .waterway-title {
       font-weight: 700;
-      font-size: 35px;
-      line-height: 45px;
+      font-size: 1.823vw;
+      line-height: 2.344vw;
       letter-spacing: -0.02em;
       font-family: "Inter";
       margin: 0 0 2.625vw 0;
@@ -1322,15 +1327,15 @@ a {
       counter-reset: test;
       display: flex;
       flex-direction: column;
-      gap: 26px;
+      gap: 1.354vw;
       li {
         font-family: "Inter";
         font-weight: 400;
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 0.938vw;
+        line-height: 1.354vw;
         letter-spacing: -0.02em;
         display: flex;
-        gap: 10px;
+        gap: 0.521vw;
         &::before {
           counter-increment: test;
           content: "0" counter(test);
@@ -1338,7 +1343,7 @@ a {
           font-family: "Inter";
           font-style: normal;
           font-weight: 700;
-          font-size: 12px;
+          font-size: 0.625vw;
           line-height: 180%;
           letter-spacing: -0.02em;
           color: #ff66c4;
@@ -1387,8 +1392,8 @@ a {
 
 .accordion-title {
   font-weight: 400;
-  font-size: 22px;
-  line-height: 36px;
+  font-size: 1.146vw;
+  line-height: 1.875vw;
   letter-spacing: -0.02em;
   padding: 0.915vw 0 1.175vw 2.344vw;
   position: relative;
@@ -1517,8 +1522,8 @@ footer {
   .f-main-title {
     font-family: "Wild World";
     font-weight: 500;
-    font-size: 68px;
-    line-height: 68px;
+    font-size: 3.542vw;
+    line-height: 3.542vw;
   }
 
   .socials {
@@ -1561,8 +1566,8 @@ footer {
       gap: 2.083vw;
       a {
         font-weight: 700;
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 0.625vw;
+        line-height: 0.781vw;
         letter-spacing: -0.02em;
         font-family: "Inter";
         text-transform: uppercase;
@@ -1573,7 +1578,7 @@ footer {
     .powered {
       a {
         img {
-          width: 174px;
+          width: 9.063vw;
           height: auto;
         }
       }

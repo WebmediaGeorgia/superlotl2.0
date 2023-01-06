@@ -123,21 +123,40 @@
   .main .main__container {
     height: 100%;
   }
+  .main .main__container .main-inbox {
+    bottom: 26.074vw;
+    top: auto;
+    width: 39.258vw;
+    padding: 1.465vw 2.344vw 4.297vw 2.344vw;
+  }
+  .main .main__container .main-inbox p {
+    font-size: 1.563vw;
+    line-height: 2.344vw;
+  }
+  .main .main__container .main-inbox p a {
+    word-wrap: break-word;
+  }
+  .main .main__container .main-inbox p br {
+    display: none;
+  }
   .main .main__container .main-title {
     top: auto;
     left: 0;
-    font-size: 3.32vw;
-    line-height: 4.297vw;
+    font-size: 4.297vw;
+    line-height: 5.273vw;
     width: 64.941vw;
-    bottom: 29.5vh;
+    bottom: 18.5vh;
   }
   .main .main__container .main-subtitle {
-    bottom: 17.5vh;
+    bottom: 10vh;
     top: auto;
-    width: 40.527vw;
-    left: 6.543vw;
+    width: 100%;
+    left: 0;
     font-size: 2.539vw;
     line-height: 3.516vw;
+  }
+  .main .main__container .main-subtitle br {
+    display: none;
   }
   .main .main__container .main-subtitle a {
     border-radius: 0.661vw;
@@ -148,16 +167,19 @@
   .main .main__container .populacion-container {
     right: 0;
     top: auto;
-    bottom: 61vh;
+    top: 5.078vw;
   }
   .main .main__container .populacion-container .main-populacion {
-    font-size: 5.078vw;
-    line-height: 6.055vw;
+    font-weight: 500;
+    font-size: 4.688vw;
+    line-height: 5.664vw;
     gap: 1.465vw;
   }
   .main .main__container .populacion-container .main-populacion span {
-    font-size: 1.953vw;
-    line-height: 2.93vw;
+    font-weight: 500;
+    font-size: 1.563vw;
+    line-height: 2.344vw;
+    letter-spacing: -0.02em;
     border-radius: 0.781vw;
     width: auto;
     padding: 0 1.27vw;
@@ -165,15 +187,20 @@
   }
   .main .main__container .populacion-container strong {
     margin: 2.051vw 0 0 0;
-    font-size: 1.953vw;
-    line-height: 2.93vw;
-    width: 32.227vw;
+    font-weight: 400;
+    font-size: 1.563vw;
+    line-height: 2.344vw;
+    letter-spacing: -0.02em;
+    width: 34.668vw;
+  }
+  .main .main__container .populacion-container strong br {
+    display: none;
   }
   .main .main__container .populacion-container .main-button {
     position: absolute;
     right: 0;
     top: auto;
-    bottom: -49vh;
+    bottom: -31vh;
     margin: 0;
     width: 17.578vw;
     height: 17.578vw;
@@ -191,6 +218,22 @@
     width: 19.531vw;
     height: 19.531vw;
     transform: translate(0.977vw, -0.977vw);
+  }
+  .beginning {
+    height: auto;
+  }
+  .beginning .beginning-wrapper {
+    position: relative;
+  }
+  .beginning .beginning-wrapper .begining-blur {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transform: rotate(180deg);
   }
   .beginning .bubbles1 {
     width: 4.785vw;
@@ -239,30 +282,39 @@
     font-size: 1.538vw;
     line-height: 2.246vw;
   }
+  .beginning .beginning__container .beginning__right-block {
+    position: relative;
+    margin: 5.078vw 0 0 0;
+  }
   .beginning .beginning__container .beginning__right-block h2 {
+    position: static;
+    padding: 0 8.398vw 0 0;
     font-size: 4.688vw;
     line-height: 6.641vw;
     gap: 1.465vw;
     transform: translateY(-1.758vw);
   }
   .beginning .beginning__container .beginning__right-block h2 span {
+    position: absolute;
+    right: 0;
+    top: -1.27vw;
     margin: 1.758vw 0 0 0;
     padding: 0 1.27vw;
-    font-size: 1.953vw;
-    line-height: 2.93vw;
+    font-size: 1.563vw;
+    line-height: 2.344vw;
     border-radius: 0.781vw;
     width: auto;
     height: 3.906vw;
   }
   .beginning .beginning__container .beginning__right-block strong {
-    top: 76%;
-    font-size: 2.344vw;
-    line-height: 3.32vw;
-    width: 44.238vw;
+    top: 44%;
+    font-size: 1.758vw;
+    line-height: 2.734vw;
+    width: auto;
     letter-spacing: 0.025em;
   }
   .beginning .beginning__container .beginning__right-block strong span {
-    margin: 0.782vw 0 0 0;
+    margin: 2.782vw 0 0 0;
   }
   .team {
     padding: 0;
@@ -345,15 +397,15 @@
     line-height: 2.93vw;
   }
   .team .team__container .ridht-block strong {
-    margin: 0.488vw 0 0 0;
-    font-size: 2.148vw;
-    line-height: 3.223vw;
+    margin: 0.88vw 0 0 0;
+    font-size: 1.758vw;
+    line-height: 2.148vw;
     letter-spacing: -0.03em;
   }
   .team .team__container .ridht-block p {
-    margin: 1.563vw 0 0 0;
-    font-size: 1.758vw;
-    line-height: 2.734vw;
+    margin: 2.563vw 0 0 0;
+    font-size: 1.563vw;
+    line-height: 2.344vw;
     width: 28.125vw;
   }
   .team .team__container .ridht-block .social {
@@ -375,37 +427,89 @@
     height: 1.563vw;
     background-size: 5.273vw auto;
   }
+  .fade-wrapper {
+    margin-top: 0;
+  }
   #mintwaterway {
-    height: 6000px;
+    height: auto;
+    width: 100%;
+  }
+  #mintwaterway #mint-waterway-wrap {
+    position: static;
+    height: auto;
+  }
+  .mint-test {
+    flex-direction: column;
+    width: auto;
   }
   #mint {
     padding: 0;
   }
   #mint img.bg {
-    top: -13.75vw;
-    left: -2.25vw;
-    width: 88vw;
+    top: 9.25vw;
+    left: 18.75vw;
+    width: 66vw;
   }
   #mint .container {
     width: 92vw;
   }
+  #mint .container .btn {
+    width: 17.578vw;
+    height: 5.859vw;
+    font-size: 1.563vw;
+    line-height: 1.758vw;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 0.781vw;
+  }
+  #mint .container .btn::before, #mint .container .btn::after {
+    width: 2.979vw;
+  }
   #mint .main-title {
     font-size: 4.688vw;
     line-height: 1.4166666667;
-    margin: 0 0 3.906vw 0;
+    margin: 13.184vw 0 3.809vw 0;
+  }
+  #mint .main-text__container {
+    width: 36.719vw;
+    gap: 2.45vw;
+    margin: 0 0 4.688vw 0;
   }
   #mint .main-text {
-    font-size: 2.344vw;
-    line-height: 1.4166666667;
-    margin: 0 0 5.859vw 0;
+    font-size: 1.563vw;
+    line-height: 2.344vw;
+  }
+  #mint .main-text br {
+    display: none;
   }
   #mint .anime-circle {
-    top: -1.953vw;
-    left: 36.5vw;
+    top: 11.047vw;
+    left: 43.5vw;
     width: 67vw;
   }
   #mint .anime-circle .wrapper-circle .character {
     width: 49.5vw;
+  }
+  #waterway {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+  }
+  #waterway .mintwaterway-blur {
+    display: block;
+    width: 100%;
+    height: 33.887vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #waterway #waterway-bg {
+    z-index: 0;
+  }
+  #waterway #waterway-blur {
+    opacity: 1;
   }
   #waterway.first #waterway-bg {
     width: 426.646vw;
@@ -413,15 +517,24 @@
     top: -25.969vw;
     min-height: 105%;
   }
+  #waterway.first .waterway-buble {
+    transform: none;
+  }
   #waterway.second #waterway-bg {
     width: 468vw;
     top: 0;
     left: -107.479vw;
   }
+  #waterway.second .waterway-buble {
+    transform: none;
+  }
   #waterway.third #waterway-bg {
     width: 360vw;
     top: 0;
     left: -124vw;
+  }
+  #waterway.third .waterway-buble {
+    transform: none;
   }
   #waterway.four #waterway-bg {
     width: 390vw;
@@ -429,9 +542,12 @@
     left: -220.958vw;
     min-height: 116%;
   }
+  #waterway.four .waterway-buble {
+    transform: none;
+  }
   #waterway .waterway-tabs {
     width: 34vw;
-    gap: 2.4vw;
+    gap: 2.54vw;
   }
   #waterway .waterway-tabs a {
     font-size: 2.344vw;
@@ -440,45 +556,63 @@
     font-size: 4.688vw;
   }
   #waterway .waterway-texts {
-    width: 34vw;
+    width: 44.141vw;
   }
   #waterway .waterway-texts .waterway-title {
-    font-size: 4.102vw;
-    line-height: 1.2380952381;
-    margin: 0 0 0.977vw 0;
+    font-size: 3.418vw;
+    line-height: 4.395vw;
+    margin: 0 0 3.906vw 0;
   }
   #waterway .waterway-texts p {
     font-size: 2.344vw;
     line-height: 1.4166666667;
     margin-top: 0.977vw;
   }
+  #waterway .waterway-texts ul {
+    gap: 2.354vw;
+  }
   #waterway .waterway-texts ul li {
-    font-size: 1.953vw;
-    line-height: 1.5;
-    margin-top: 0.977vw;
-    padding: 0 0 0 2.8vw;
+    font-size: 1.563vw;
+    line-height: 2.344vw;
+    gap: 0.977vw;
   }
   #waterway .waterway-texts ul li::before {
-    width: 0.391vw;
-    height: 0.391vw;
-    top: 1.465vw;
+    font-size: 0.977vw;
+    line-height: 1.953vw;
   }
   #waterway .waterway-texts a {
     width: 11.6vw;
     height: 2.8vw;
   }
   #waterway .waterway-buble {
-    top: 40vw;
-    left: 17.09vw;
+    width: 28.125vw;
+    height: 28.125vw;
+    top: 53vh;
+    left: 20.09vw;
+  }
+  #waterway .waterway-buble .buble-container .buble {
+    width: 100%;
+  }
+  #waterway .waterway-buble .buble-container .axolots {
+    width: 19.531vw;
+  }
+  #waterway .waterway-buble .buble-container .axolots.active {
+    opacity: 1;
   }
   #waterway.first .waterway-buble {
-    top: 40vw;
+    top: 53vh;
     left: 17.09vw;
   }
   .waterway-maintitle {
-    font-size: 1.953vw;
-    padding: 0.488vw 1.172vw;
-    margin: 6.836vw 0 0.586vw 0;
+    font-size: 1.563vw;
+    line-height: 2.344vw;
+    padding: 0 1.563vw;
+    margin: 3.418vw 0 0 0;
+    width: auto;
+    height: 3.516vw;
+    border-radius: 0.781vw;
+    display: flex;
+    align-items: center;
   }
   footer .footer-light {
     width: 103vw;
@@ -486,21 +620,26 @@
     top: -4vw;
   }
   footer .faq {
-    height: 84.766vw;
+    height: auto;
+    padding: 7.292vw 0 13.672vw 0;
   }
   footer .faq .main-title {
+    text-align: start;
     font-size: 4.688vw;
-    line-height: 1.4166666667;
+    line-height: 6.641vw;
+  }
+  .accordion-wrap {
+    flex-direction: column;
   }
   .accordion-item {
-    width: 44.141vw;
+    width: 100%;
   }
   .accordion-item.show {
     max-height: 34.18vw !important;
   }
   .accordion-title {
-    font-size: 2.148vw;
-    line-height: 1.4545454545;
+    font-size: 1.758vw;
+    line-height: 2.734vw;
     padding: 1.66vw 1.563vw 1.66vw 3.125vw;
   }
   .accordion-title::before {
@@ -513,20 +652,21 @@
   }
   .accordion-content {
     font-size: 1.758vw;
-    line-height: 1.5555555556;
+    line-height: 2.734vw;
   }
   .footer {
     padding: 0 0 3.906vw 0;
   }
   .footer .f-main-title {
-    font-size: 6.641vw;
+    font-size: 4.688vw;
+    line-height: 6.641vw;
   }
   .footer .join-bot > span {
-    font-size: 9.18vw;
-    line-height: 1.4787234043;
+    font-size: 8.984vw;
+    line-height: 10.84vw;
   }
   .footer .join-bot > img {
-    width: 30.762vw;
+    width: 29.297vw;
     margin: 0 0 0 13.5vw;
   }
   .footer .socials {
@@ -540,15 +680,15 @@
   .footer .socials .btn img {
     width: 2.051vw;
   }
-  .footer .terms {
+  .footer .footer__block-wrapper .terms {
     gap: 3.906vw;
     margin: 0 0 2.734vw 0;
   }
-  .footer .terms a {
-    font-size: 1.367vw;
-    line-height: 1.4285714286;
+  .footer .footer__block-wrapper .terms a {
+    font-size: 1.172vw;
+    line-height: 1.465vw;
   }
-  .footer .powered a img {
-    width: 12.695vw;
+  .footer .footer__block-wrapper .powered a img {
+    width: 16.992vw;
   }
 }/*# sourceMappingURL=1024.css.map */
