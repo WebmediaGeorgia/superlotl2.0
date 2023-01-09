@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const mediaQuery = window.matchMedia("only screen and (max-width: 600px)");
+  const mediaQuery = window.matchMedia("only screen and (max-width: 860px)");
   // scroll
   const smoothLinks = document.querySelectorAll('a[href^="#"]');
   for (let smoothLink of smoothLinks) {
