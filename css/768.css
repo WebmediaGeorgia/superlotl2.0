@@ -130,8 +130,8 @@
     height: 100%;
   }
   .main .main__container .main-title {
-    font-size: 44px;
-    line-height: 54px;
+    font-size: 5.729vw;
+    line-height: 7.031vw;
     width: auto;
     bottom: 31.5vh;
   }
@@ -139,8 +139,8 @@
     bottom: 21vh;
     width: 100%;
     left: 0;
-    font-size: 26px;
-    line-height: 36px;
+    font-size: 3.385vw;
+    line-height: 4.688vw;
   }
   .main .main__container .main-subtitle a {
     border-radius: 0.881vw;
@@ -148,34 +148,34 @@
     height: 3.907vw;
   }
   .main .main__container .main-inbox {
-    padding: 15px 24px 44px 24px;
-    width: 402px;
+    padding: 1.953vw 3.125vw 5.729vw 3.125vw;
+    width: 52.344vw;
     bottom: 57vw;
   }
   .main .main__container .main-inbox p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 2.083vw;
+    line-height: 3.125vw;
   }
   .main .main__container .populacion-container {
     top: 10.5vw;
   }
   .main .main__container .populacion-container .main-populacion {
-    font-size: 42px;
-    line-height: 52px;
+    font-size: 5.469vw;
+    line-height: 6.771vw;
     gap: 1.953vw;
   }
   .main .main__container .populacion-container .main-populacion span {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 2.083vw;
+    line-height: 3.125vw;
     border-radius: 1.041vw;
-    padding: 0 16px;
-    height: 36px;
+    padding: 0 2.083vw;
+    height: 4.688vw;
   }
   .main .main__container .populacion-container strong {
-    margin: 17px 0 0 0;
-    font-size: 16px;
-    line-height: 24px;
-    width: 324px;
+    margin: 2.214vw 0 0 0;
+    font-size: 2.083vw;
+    line-height: 3.125vw;
+    width: 42.188vw;
   }
   .main .main__container .populacion-container .main-button {
     bottom: -34.5vh;
@@ -227,8 +227,8 @@
     content: "";
     position: absolute;
     right: auto;
-    left: 148px;
-    top: 240px;
+    left: 19.271vw;
+    top: 31.25vw;
     bottom: auto;
     height: 1.041vw;
     width: 1.041vw;
@@ -241,9 +241,9 @@
   .beginning .beginning__container::after {
     content: "";
     position: absolute;
-    right: 150px;
+    right: 19.531vw;
     left: auto;
-    top: 240px;
+    top: 31.25vw;
     bottom: auto;
     height: 1.041vw;
     width: 1.041vw;
@@ -309,32 +309,32 @@
     line-height: 8.855vw;
     gap: 1.953vw;
     padding: 0;
-    width: 688px;
+    width: 89.583vw;
   }
   .beginning .beginning__container .beginning__right-block h2 span {
     position: static;
     right: -4.167vw;
     top: 0;
-    margin: 5px 0 0 0;
-    padding: 0 17px;
-    font-size: 16px;
-    line-height: 24px;
+    margin: 0.651vw 0 0 0;
+    padding: 0 2.214vw;
+    font-size: 2.083vw;
+    line-height: 3.125vw;
     border-radius: 1.041vw;
     width: auto;
     height: 5.208vw;
   }
   .beginning .beginning__container .beginning__right-block strong {
-    top: 670px;
+    top: 87.24vw;
     left: 0;
     margin: 0;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 2.344vw;
+    line-height: 3.646vw;
     font-weight: 400;
     width: 100%;
     letter-spacing: -0.02em;
   }
   .beginning .beginning__container .beginning__right-block strong span {
-    margin: 27px 0 0 0;
+    margin: 3.516vw 0 0 0;
   }
   .team {
     padding: 0;
@@ -392,7 +392,7 @@
     line-height: 8.855vw;
   }
   .team .team__container .ridht-block {
-    margin: 16.536vw 0 0 0;
+    margin: 26vw 0 0 0;
   }
   .team .team__container .ridht-block .button-container {
     gap: 1.303vw;
@@ -413,20 +413,20 @@
     width: 6.016vw;
   }
   .team .team__container .ridht-block span {
-    margin: 11.197vw 0 0 0;
+    margin: 13.197vw 0 0 0;
     font-size: 3.385vw;
     line-height: 3.907vw;
   }
   .team .team__container .ridht-block strong {
     margin: 0.651vw 0 0 0;
-    font-size: 2.864vw;
-    line-height: 4.297vw;
+    font-size: 2.344vw;
+    line-height: 2.865vw;
     letter-spacing: -0.03em;
   }
   .team .team__container .ridht-block p {
-    margin: 2.084vw 0 0 0;
-    font-size: 2.344vw;
-    line-height: 3.645vw;
+    margin: 3.084vw 0 0 0;
+    font-size: 2.083vw;
+    line-height: 3.125vw;
     width: 37.5vw;
   }
   .team .team__container .ridht-block .social {
@@ -437,7 +437,6 @@
     width: 5.208vw;
     height: 5.208vw;
   }
-  /*---*/
   .container {
     width: 90.5vw;
   }
@@ -452,14 +451,25 @@
     height: 2.083vw;
     background-size: 7.031vw auto;
   }
+  #mint {
+    align-items: center;
+  }
   #mint .container {
     width: 90.5vw;
     display: flex;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
     flex-direction: column;
     justify-content: center;
   }
   #mint .container .btn {
-    margin: 20px 0 0 auto;
+    margin: 6.51vw 19.401vw 0 auto;
+    width: 23.438vw;
+    height: 7.813vw;
+    border-radius: 1.042vw;
+    font-size: 16px;
+    line-height: 18px;
   }
   #mint .main-title {
     font-size: 6.25vw;
@@ -467,14 +477,14 @@
     margin: 0 0 5.208vw 0;
   }
   #mint .main-text {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 2.083vw;
+    line-height: 3.125vw;
     width: 100%;
     margin: 0 0 0 0;
   }
   #mint .main-text__container {
-    margin: 215px 0 0 auto;
-    width: 323px;
+    margin: 27.995vw 0 0 auto;
+    width: 42.708vw;
   }
   #mint .anime-circle {
     width: 97vw;
@@ -484,9 +494,21 @@
   #mint .anime-circle .wrapper-circle .character {
     width: 68.5vw;
   }
+  #mint img.bg {
+    top: -4.75vw;
+    left: -18.25vw;
+    width: 102vw;
+  }
+  #mint .anime-circle {
+    width: 57.5vw;
+    top: -6.5vw;
+    left: 40.25vw;
+    height: 57.5vw;
+  }
   #waterway .waterway-tabs {
+    margin: 10.026vw 0 0 0;
     width: 45vw;
-    gap: 3.2vw;
+    gap: 3.906vw;
   }
   #waterway .waterway-tabs a {
     font-size: 3.125vw;
@@ -495,22 +517,27 @@
     font-size: 6.25vw;
   }
   #waterway .waterway-texts {
-    width: 44vw;
+    width: 42.188vw;
   }
   #waterway .waterway-texts .waterway-title {
-    font-size: 5.469vw;
-    margin: 0 0 1.302vw 0;
+    font-size: 4.557vw;
+    line-height: 5.859vw;
+    margin: 0 0 5.208vw 0;
+  }
+  #waterway .waterway-texts .waterway-title br {
+    display: none;
+  }
+  #waterway .waterway-texts ul {
+    gap: 3.255vw;
   }
   #waterway .waterway-texts ul li {
-    font-size: 2.604vw;
-    margin-top: 1.302vw;
-    padding: 0 0 0 3.8vw;
+    font-size: 2.083vw;
+    line-height: 3.125vw;
+    gap: 1.693vw;
   }
   #waterway .waterway-texts ul li::before {
-    width: 0.521vw;
-    height: 0.521vw;
-    top: 1.953vw;
-    left: 1.5vw;
+    font-size: 1.302vw;
+    line-height: 2.995vw;
   }
   #waterway .waterway-texts p {
     font-size: 3.125vw;
@@ -521,16 +548,16 @@
     border-radius: 1.042vw;
   }
   #waterway .waterway-buble {
-    top: 70vw;
-    left: 15vw;
-    width: 40vw;
-    height: 40vw;
+    top: 63vw;
+    left: 4.5vw;
+    width: 43vw;
+    height: 43vw;
   }
   #waterway .waterway-buble .buble-container .buble {
-    width: 40vw;
+    width: 43vw;
   }
   #waterway .waterway-buble .buble-container .axolots {
-    width: 37vw;
+    width: 35vw;
   }
   #waterway.first #waterway-bg {
     width: 427.646vw;
@@ -539,8 +566,8 @@
     min-height: 105%;
   }
   #waterway.first .waterway-buble {
-    top: 70vw;
-    left: 6.5vw;
+    top: 63vw;
+    left: 4.5vw;
   }
   #waterway.second #waterway-bg {
     width: 540.646vw;
@@ -549,8 +576,8 @@
     min-height: 105%;
   }
   #waterway.second .waterway-buble {
-    transform: scale(1.125) translate(1.979vw, -8.021vw);
-    left: 6.5vw;
+    top: 63vw;
+    left: 4.5vw;
   }
   #waterway.third #waterway-bg {
     width: 440.646vw;
@@ -559,8 +586,8 @@
     min-height: 105%;
   }
   #waterway.third .waterway-buble {
-    transform: scale(1.3) translate(2.917vw, 3.646vw);
-    left: 6.5vw;
+    top: 63vw;
+    left: 4.5vw;
   }
   #waterway.four #waterway-bg {
     width: 490.646vw;
@@ -569,17 +596,18 @@
     min-height: 105%;
   }
   #waterway.four .waterway-buble {
-    transform: scale(1.47) translate(5.396vw, 1.531vw);
-    left: 6.5vw;
+    top: 63vw;
+    left: 4.5vw;
   }
   .waterway-maintitle {
-    font-size: 2.604vw;
-    padding: 0.651vw 1.563vw;
+    font-size: 2.083vw;
+    line-height: 3.125vw;
+    height: 4.688vw;
+    padding: 0 2.083vw;
     border-radius: 1.042vw;
   }
   footer .faq {
-    height: 138.021vw;
-    margin: 0 0 23.438vw 0;
+    padding: 7.292vw 0 19.531vw 0;
   }
   footer .faq .main-title {
     font-size: 6.25vw;
@@ -594,7 +622,8 @@
     width: 100%;
   }
   .accordion-title {
-    font-size: 2.865vw;
+    font-size: 2.344vw;
+    line-height: 3.646vw;
     padding: 2.604vw 2.604vw 2.604vw 5.208vw;
   }
   .accordion-title::before {
@@ -607,8 +636,21 @@
   }
   .accordion-content {
     font-size: 2.344vw;
+    line-height: 3.646vw;
+  }
+  .footer {
+    padding: 0 0 9.115vw 0;
+  }
+  .footer .f-main-title {
+    font-size: 6.25vw;
+    line-height: 8.854vw;
+  }
+  .footer .join-bot > img {
+    width: 29.948vw;
+    margin: 0 0 0 10.5vw;
   }
   .footer .socials {
+    margin: 2.977vw 0 8vw 0;
     gap: 1.823vw;
   }
   .footer .socials .btn {
@@ -632,13 +674,11 @@
   .footer .socials .btn > span:nth-child(1) {
     display: none;
   }
-  .footer .terms {
-    gap: 5.208vw;
+  .footer .footer__block-wrapper .terms a {
+    font-size: 1.563vw;
+    line-height: 1.953vw;
   }
-  .footer .terms a {
-    font-size: 1.823vw;
-  }
-  .footer .powered a img {
-    width: 16.927vw;
+  .footer .footer__block-wrapper .powered a img {
+    width: 22.656vw;
   }
 }/*# sourceMappingURL=768.css.map */
