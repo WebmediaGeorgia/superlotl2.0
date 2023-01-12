@@ -1023,7 +1023,7 @@ a {
   transform: translate(0, -50%);
   width: 3.411vw;
   height: 1.146vw;
-  background-image: url("/img/mint/btn-stripes.svg");
+  background-image: url("../img/mint/btn-stripes.svg");
   background-size: 3.411vw auto;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1285,7 +1285,7 @@ a {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: url("/img/waterway-fade.svg");
+  background: url("../img/waterway-fade.svg");
   background-size: 153.646vw auto;
   background-position: center center;
   background-repeat: no-repeat;

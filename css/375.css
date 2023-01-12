@@ -471,7 +471,7 @@
   #waterway {
     height: auto;
     width: 100vw;
-    background-image: url("/img/waterway/waterway-bg-mob.png");
+    background-image: url("../img/waterway/waterway-bg-mob.png");
     background-size: cover;
     background-position: center -6.667vw;
     background-repeat: no-repeat;
@@ -566,25 +566,25 @@
     content: "Season 1";
   }
   #waterway .waterway-texts #waterway-text-1::after {
-    background-image: url(/img/waterway/bubble-mobile.png);
+    background-image: url(../img/waterway/bubble-mobile.png);
   }
   #waterway .waterway-texts #waterway-text-2::before {
     content: "Expression";
   }
   #waterway .waterway-texts #waterway-text-2::after {
-    background-image: url(/img/waterway/bubble-mobile2.png);
+    background-image: url(../img/waterway/bubble-mobile2.png);
   }
   #waterway .waterway-texts #waterway-text-3::before {
     content: "Purpose";
   }
   #waterway .waterway-texts #waterway-text-3::after {
-    background-image: url(/img/waterway/bubble-mobile3.png);
+    background-image: url(../img/waterway/bubble-mobile3.png);
   }
   #waterway .waterway-texts #waterway-text-4::before {
     content: "Forging";
   }
   #waterway .waterway-texts #waterway-text-4::after {
-    background-image: url(/img/waterway/bubble-mobile4.png);
+    background-image: url(../img/waterway/bubble-mobile4.png);
   }
   #waterway .waterway-texts .waterway-title {
     font-size: 5.333vw;
