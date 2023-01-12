@@ -105,27 +105,39 @@
     display: none;
   }
   .main .main__container {
-    height: 194.667vw;
+    height: 213.333vw;
   }
   .main .main__container .main-title {
-    top: 42.667vw;
-    font-size: 6.933vw;
-    line-height: 9.067vw;
-    width: 100%;
+    top: 86.667vw;
+    font-size: 8vw;
+    line-height: 10.667vw;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
     bottom: auto;
   }
   .main .main__container .main-subtitle {
     bottom: auto;
-    top: 105.867vw;
+    top: 110.867vw;
     width: 100%;
     left: 0;
-    font-size: 5.333vw;
-    line-height: 7.467vw;
+    font-size: 4.8vw;
+    line-height: 6.933vw;
   }
   .main .main__container .main-subtitle a {
     border-radius: 1.805vw;
     padding: 0 1.333vw;
     height: 8.001vw;
+  }
+  .main .main__container .main-inbox {
+    bottom: auto;
+    top: 45.333vw;
+    width: 78.4vw;
+    padding: 3.467vw 4.8vw 9.333vw 4.8vw;
+  }
+  .main .main__container .main-inbox p {
+    font-size: 3.733vw;
+    line-height: 5.333vw;
   }
   .main .main__container .populacion-container {
     bottom: auto;
@@ -133,53 +145,33 @@
     left: 0;
   }
   .main .main__container .populacion-container .main-populacion {
-    flex-direction: column-reverse;
-    font-size: 9.6vw;
-    line-height: 13.333vw;
-    gap: 1.067vw;
+    font-size: 9.067vw;
+    line-height: 11.733vw;
+    gap: 3.733vw;
   }
   .main .main__container .populacion-container .main-populacion span {
-    font-size: 4.267vw;
+    font-size: 3.733vw;
     line-height: 6.4vw;
-    width: 21.867vw;
     height: 9.067vw;
     border-radius: 2.133vw;
     padding: 0 3.468vw;
   }
   .main .main__container .populacion-container strong {
-    margin: 2.933vw 0 0 0;
-    font-size: 4.267vw;
-    line-height: 6.4vw;
+    margin: 3.933vw 0 0 0;
+    font-size: 3.733vw;
+    line-height: 5.333vw;
     width: 100%;
   }
   .main .main__container .populacion-container .main-button {
-    bottom: auto;
-    top: -16.8vw;
-    margin: 0;
-    width: 33.333vw;
-    height: 33.333vw;
-    font-size: 3.733vw;
-    line-height: 5.6vw;
-    -webkit-animation: main-button375 3s linear infinite;
-            animation: main-button375 3s linear infinite;
-  }
-  .main .main__container .populacion-container .main-button img {
-    bottom: 4.534vw;
-    width: 4.8vw;
-  }
-  .main .main__container .populacion-container .main-button:hover {
-    width: 38.667vw;
-    height: 38.667vw;
-    transform: translate(2.667vw, -2.667vw);
+    display: none;
   }
   .beginning {
     width: 100%;
     height: auto;
-    margin-top: -72vw;
     z-index: 0;
   }
   .beginning .water-blur {
-    top: -4%;
+    display: none;
   }
   .beginning .bubbles1 {
     width: 13.066vw;
@@ -194,33 +186,47 @@
     width: 12.534vw;
   }
   .beginning .beginning-wrapper {
-    height: 309.333vw;
-  }
-  .beginning .beginning-wrapper::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 65.333vw;
-    background-image: url(../img/beginning/blur.png);
-    background-size: 100%;
-  }
-  .beginning .beginning-wrapper .beginning-container {
     height: auto;
   }
+  .beginning .beginning-wrapper .begining-blur {
+    height: 81.333vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .beginning .beginning-wrapper .beginning-container {
+    height: 256.8vw;
+    display: block;
+  }
   .beginning .beginning-wrapper .beginning-container .beginning-background {
-    top: 0;
-    bottom: auto;
+    top: auto;
+    bottom: 0;
   }
   .beginning .beginning__container {
     height: auto;
-    transform: translateY(50%);
+    transform: translateY(0);
+    align-items: flex-start;
+  }
+  .beginning .beginning__container::before {
+    left: 3.6vw;
+    top: 60vw;
+    height: 2.133vw;
+    width: 2.133vw;
+    border-left: 0.26vw solid #ffffff;
+    border-bottom: 0.26vw solid #ffffff;
+  }
+  .beginning .beginning__container::after {
+    right: 3.6vw;
+    top: 60vw;
+    height: 2.133vw;
+    width: 2.133vw;
+    border-left: 0.26vw solid #ffffff;
+    border-bottom: 0.26vw solid #ffffff;
   }
   .beginning .beginning__container .beginning__slider {
     width: 89.867vw;
     height: 89.867vw;
-    transform: rotate(180deg) translateY(-98.133vw);
+    transform: rotate(180deg) translateY(0);
+    margin: 5.333vw 0 0 0;
   }
   .beginning .beginning__container .beginning__slider::before {
     right: 4vw;
@@ -280,40 +286,41 @@
     left: -4%;
   }
   .beginning .beginning__container .beginning__right-block {
-    position: absolute;
+    position: relative;
     right: auto;
     left: 0;
-    top: 54.133vw;
+    top: 0;
     width: 100%;
   }
   .beginning .beginning__container .beginning__right-block h2 {
     position: relative;
     font-size: 10.133vw;
-    line-height: 15.467vw;
+    line-height: 12.8vw;
     gap: 4.001vw;
+    flex-direction: column;
   }
   .beginning .beginning__container .beginning__right-block h2 span {
-    position: absolute;
+    position: relative;
     right: 0;
     top: 0;
-    margin: 4.533vw 0 0 0;
+    margin: 0;
     padding: 0 3.2vw;
-    font-size: 4.267vw;
+    font-size: 3.733vw;
     line-height: 6.4vw;
     border-radius: 2.133vw;
-    width: auto;
+    width: 37.333vw;
     height: 9.333vw;
   }
   .beginning .beginning__container .beginning__right-block strong {
-    top: 316%;
+    top: 375%;
     margin: 0;
-    font-size: 5.333vw;
-    line-height: 8vw;
+    font-size: 4vw;
+    line-height: 6.4vw;
     width: 100%;
     letter-spacing: 0.025em;
   }
   .beginning .beginning__container .beginning__right-block strong span {
-    margin: 2.135vw 0 0 0;
+    margin: 6.133vw 0 0 0;
   }
   .team {
     padding: 0;
@@ -385,16 +392,17 @@
   }
   .team .team__container .ridht-block {
     flex-direction: column;
-    margin: 8.533vw 0 0 0;
+    margin: 24vw 0 0 0;
     align-items: flex-end;
+    width: 41.867vw;
   }
   .team .team__container .ridht-block .button-container {
     gap: 2.668vw;
-    transform: translateX(-9.067vw);
+    margin: 0 auto 0 0;
   }
   .team .team__container .ridht-block .button-container .button {
-    width: 17.599vw;
-    height: 7.466vw;
+    width: 15.733vw;
+    height: 6.667vw;
     border: 1px solid #ffffff;
     border-radius: 1.75vw;
   }
@@ -408,30 +416,28 @@
     width: 12.321vw;
   }
   .team .team__container .ridht-block span {
-    margin: 18.399vw 0 0 0;
-    transform: translateX(-2.667vw);
-    font-size: 6.4vw;
-    line-height: 9.067vw;
+    margin: 9.333vw auto 0 0;
+    font-size: 5.867vw;
+    line-height: 7.467vw;
   }
   .team .team__container .ridht-block strong {
-    margin: 0 14.133vw 0 0;
-    font-size: 5.333vw;
-    line-height: 8vw;
-    letter-spacing: -0.03em;
+    margin: 2.133vw auto 0 0;
+    font-size: 4.267vw;
+    line-height: 5.067vw;
+    letter-spacing: -0.02em;
   }
   .team .team__container .ridht-block p {
-    margin: 3.467vw 0 0 0;
-    font-size: 4.267vw;
-    line-height: 6.4vw;
-    width: 47.2vw;
+    margin: 5.067vw auto 0 0;
+    font-size: 4vw;
+    line-height: 5.333vw;
   }
   .team .team__container .ridht-block .social {
-    margin: 6.932vw 22.667vw 0vw 0;
+    margin: 5.867vw auto 0 0;
     gap: 3.2vw;
   }
   .team .team__container .ridht-block .social a {
-    width: 10.666vw;
-    height: 10.666vw;
+    width: 9.6vw;
+    height: 9.6vw;
   }
   /*---*/
   .btn {
@@ -469,13 +475,14 @@
     background-size: cover;
     background-position: center -6.667vw;
     background-repeat: no-repeat;
+    padding: 0 0 29.333vw 0;
   }
   #waterway #waterway-bg {
     z-index: 1;
     display: none;
   }
   #waterway #waterway-blur {
-    z-index: 999;
+    z-index: 1;
     width: 100%;
     height: 75.733vw;
     opacity: 1 !important;
@@ -483,6 +490,25 @@
   }
   #waterway .container {
     flex-direction: column;
+  }
+  #waterway .container::before {
+    content: "INK the Metaverse";
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.733vw;
+    line-height: 6.4vw;
+    letter-spacing: -0.02em;
+    z-index: 2;
+    color: #ffffff;
+    display: flex;
+    padding: 0 3.733vw;
+    border-radius: 2.133vw;
+    height: 9.6vw;
+    border-left: 1px solid #ff66c4;
+    border-right: 1px solid #ff66c4;
+    align-items: center;
+    margin: 29.333vw 0 0 auto;
   }
   #waterway .waterway-tabs {
     display: none;
@@ -492,7 +518,6 @@
     height: auto;
     position: relative;
     z-index: 9;
-    padding: 38.667vw 0 0 0;
   }
   #waterway .waterway-texts::before, #waterway .waterway-texts::after {
     content: "";
@@ -502,66 +527,88 @@
     background-position: center center;
     z-index: -1;
   }
-  #waterway .waterway-texts::before {
-    width: 72vw;
-    height: 72vw;
-    background-image: url(/img/waterway/bubble.png);
-    background-size: 90%;
-    top: 2.933vw;
-    right: -5.867vw;
-    -webkit-animation: 4s bubbles-waterway ease-in-out infinite;
-            animation: 4s bubbles-waterway ease-in-out infinite;
-  }
-  #waterway .waterway-texts::after {
-    width: 53.333vw;
-    height: 53.333vw;
-    background-image: url(/img/waterway/axolots.gif);
-    background-size: 53.333vw auto;
-    top: 14.667vw;
-    right: 3.467vw;
-    -webkit-animation: 4s bubbles-waterway ease-in-out infinite;
-            animation: 4s bubbles-waterway ease-in-out infinite;
-  }
   #waterway .waterway-texts #waterway-text-1,
 #waterway .waterway-texts #waterway-text-2,
 #waterway .waterway-texts #waterway-text-3,
 #waterway .waterway-texts #waterway-text-4 {
+    position: relative;
+    padding: 41.6vw 0 0 0;
     height: auto;
-    margin: 0 0 28vw 0;
+    margin: 0 0 12vw 0;
   }
-  #waterway .waterway-texts #waterway-text-1 .hidden-title,
-#waterway .waterway-texts #waterway-text-2 .hidden-title,
-#waterway .waterway-texts #waterway-text-3 .hidden-title,
-#waterway .waterway-texts #waterway-text-4 .hidden-title {
-    display: flex;
-  }
-  #waterway .waterway-texts .hidden-title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 10.133vw;
-    line-height: 1.5263157895;
+  #waterway .waterway-texts #waterway-text-1::before,
+#waterway .waterway-texts #waterway-text-2::before,
+#waterway .waterway-texts #waterway-text-3::before,
+#waterway .waterway-texts #waterway-text-4::before {
     font-family: "Wild World";
+    font-style: normal;
     font-weight: 500;
-    margin: 0 0 9.333vw 0;
+    font-size: 8.533vw;
+    line-height: 15.467vw;
+    color: #ffffff;
   }
-  #waterway .waterway-texts .hidden-title .waterway-maintitle {
-    font-size: 4.267vw;
-    border-radius: 2.133vw;
-    padding: 1.333vw 3.2vw;
+  #waterway .waterway-texts #waterway-text-1::after,
+#waterway .waterway-texts #waterway-text-2::after,
+#waterway .waterway-texts #waterway-text-3::after,
+#waterway .waterway-texts #waterway-text-4::after {
+    content: "";
+    position: absolute;
+    width: 34.667vw;
+    height: 37.333vw;
+    background-size: 100%;
+    top: 7.2vw;
+    right: auto;
+    left: 0;
+    -webkit-animation: 4s bubbles-waterway ease-in-out infinite;
+            animation: 4s bubbles-waterway ease-in-out infinite;
+  }
+  #waterway .waterway-texts #waterway-text-1::before {
+    content: "Season 1";
+  }
+  #waterway .waterway-texts #waterway-text-1::after {
+    background-image: url(/img/waterway/bubble-mobile.png);
+  }
+  #waterway .waterway-texts #waterway-text-2::before {
+    content: "Expression";
+  }
+  #waterway .waterway-texts #waterway-text-2::after {
+    background-image: url(/img/waterway/bubble-mobile2.png);
+  }
+  #waterway .waterway-texts #waterway-text-3::before {
+    content: "Purpose";
+  }
+  #waterway .waterway-texts #waterway-text-3::after {
+    background-image: url(/img/waterway/bubble-mobile3.png);
+  }
+  #waterway .waterway-texts #waterway-text-4::before {
+    content: "Forging";
+  }
+  #waterway .waterway-texts #waterway-text-4::after {
+    background-image: url(/img/waterway/bubble-mobile4.png);
   }
   #waterway .waterway-texts .waterway-title {
-    font-size: 9.067vw;
-    line-height: 1.2941176471;
+    font-size: 5.333vw;
+    line-height: 7.467vw;
+    margin: 1.067vw 0 6.933vw 0;
+  }
+  #waterway .waterway-texts .waterway-title br {
+    display: block;
+  }
+  #waterway .waterway-texts ul {
+    gap: 3.2vw;
   }
   #waterway .waterway-texts ul li {
-    font-size: 4.8vw;
-    line-height: 1.5555555556;
-    padding: 0 0 0 7.8vw;
-    margin-top: 1.333vw;
+    gap: 3.2vw;
+    font-size: 4vw;
+    line-height: 6.4vw;
   }
   #waterway .waterway-texts ul li::before {
-    left: 3.4vw;
+    font-size: 2.667vw;
+    line-height: 5.6vw;
+  }
+  #waterway .waterway-texts ul li a {
+    font-size: 4vw;
+    line-height: 6.4vw;
   }
   #waterway .waterway-texts p {
     font-size: 5.333vw;
@@ -584,8 +631,8 @@
     border-radius: 2.133vw;
   }
   footer .faq {
-    height: 282.667vw;
-    margin: 0 0 48vw 0;
+    height: auto;
+    padding: 0 0 32vw 0;
   }
   footer .faq .main-title {
     font-size: 12.8vw;
@@ -597,7 +644,8 @@
     width: 100%;
   }
   .accordion-title {
-    font-size: 5.867vw;
+    font-size: 3.733vw;
+    line-height: 4.8vw;
     padding: 5.333vw 5.333vw 5.333vw 10.667vw;
   }
   .accordion-title::before {
@@ -615,12 +663,12 @@
   }
   footer .faq .main-title {
     font-size: 10.133vw;
-    line-height: 1.5263157895;
+    line-height: 15.467vw;
     margin: 0 0 2.667vw 0;
   }
   .accordion-title {
-    font-size: 5.333vw;
-    line-height: 1.5;
+    font-size: 4.267vw;
+    line-height: 6.4vw;
     padding: 4.533vw 5.333vw 4.533vw 10.133vw;
   }
   .accordion-title::before {
@@ -634,7 +682,8 @@
     left: 4.267vw;
   }
   .accordion-content {
-    font-size: 4.8vw;
+    font-size: 4.267vw;
+    line-height: 6.4vw;
   }
   .footer {
     padding: 0 0 12.8vw 0;
@@ -643,81 +692,100 @@
     height: auto;
   }
   .footer .f-main-title {
-    font-size: 6.667vw;
-    line-height: 1;
+    font-size: 8.533vw;
+    line-height: 12.8vw;
   }
   .footer .join-bot {
     margin: 0 0 1.333vw 0;
   }
   .footer .join-bot > span {
-    font-size: 8.8vw;
-    line-height: 1.4848484848;
+    font-size: 10.133vw;
+    line-height: 12.267vw;
+  }
+  .footer .join-bot > img {
+    width: 29.067vw;
+    margin: 0 0 0 8vw;
   }
   .footer .socials {
     flex-direction: column;
-    margin: 0 0 9.6vw 0;
+    margin: 0 0 13vw 0;
     gap: 4vw;
   }
   .footer .socials .btn {
     font-size: 4.267vw;
     gap: 3.2vw;
     padding: 4vw 5.867vw;
+    border-radius: 2.133vw;
+  }
+  .footer .socials .btn::before, .footer .socials .btn::after {
+    width: 4.267vw;
   }
   .footer .socials .btn img {
     width: 5.333vw;
   }
-  .footer .terms {
+  .footer .footer__block-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer__block-wrapper .terms {
     gap: 8vw;
     margin: 0 0 6.933vw 0;
   }
-  .footer .terms a {
+  .footer .footer__block-wrapper .terms a {
     font-size: 3.2vw;
     gap: 3.733vw;
   }
-  .footer .terms a .btn {
+  .footer .footer__block-wrapper .terms a .btn {
     font-size: 4.8vw;
     gap: 3.2vw;
     padding: 5.067vw 5.867vw;
   }
-  .footer .terms a .btn img {
+  .footer .footer__block-wrapper .terms a .btn img {
     margin: 0;
     width: 5.333vw;
   }
-  .footer .terms a .btn::before, .footer .terms a .btn::after {
+  .footer .footer__block-wrapper .terms a .btn::before, .footer .footer__block-wrapper .terms a .btn::after {
     width: 4.267vw;
   }
-  .footer .terms a .btn::before {
+  .footer .footer__block-wrapper .terms a .btn::before {
     left: 0;
   }
-  .footer .terms a .btn::after {
+  .footer .footer__block-wrapper .terms a .btn::after {
     right: 0;
   }
-  .footer .terms a .btn > span:nth-child(1) {
+  .footer .footer__block-wrapper .terms a .btn > span:nth-child(1) {
     display: none;
   }
-  .footer .terms .terms {
+  .footer .footer__block-wrapper .terms .terms {
     gap: 10.667vw;
   }
-  .footer .terms .terms a {
-    font-size: 3.733vw;
+  .footer .footer__block-wrapper .terms .terms a {
+    font-size: 3.2vw;
+    line-height: 4vw;
   }
-  .footer .terms .powered a img {
-    width: 34.667vw;
+  .footer .footer__block-wrapper .terms .powered a img {
+    width: 45.867vw;
   }
   #mint {
     width: 100%;
-    height: 255.733vw;
+    height: 229.333vw;
+  }
+  #mint .main-text__container {
+    margin: 85vw 0 0 0;
+    width: 100%;
+    gap: 4vw;
   }
   #mint img.bg {
-    top: 0;
-    left: -3.25vw;
-    width: 125vw;
+    top: 8.533vw;
+    left: 0;
+    width: 252vw;
   }
   #mint .anime-circle {
-    top: auto;
-    bottom: 53.5vw;
-    left: -20.75vw;
-    width: 140vw;
+    top: 42.667vw;
+    bottom: auto;
+    left: -13.75vw;
+    width: 91.2vw;
+    height: 108.533vw;
   }
   #mint .anime-circle .wrapper-circle .character {
     width: 98.5vw;
@@ -725,26 +793,29 @@
   #mint .container {
     height: 100%;
     margin-top: auto;
+    display: block;
   }
-  #mint .btn {
-    position: absolute;
-    bottom: 28.267vw;
-    left: 50%;
-    transform: translate(-50%, 0);
-    font-size: 4.8vw;
-    line-height: 1.4822222222;
-    padding: 4.8vw 6.5vw;
-    width: 58.667vw;
+  #mint .container .btn {
+    position: relative;
+    font-size: 4.267vw;
+    line-height: 4.8vw;
+    width: 48vw;
+    margin: 10.667vw 0 0 0;
+    height: 14.4vw;
+    border-radius: 2.133vw;
+  }
+  #mint .container .btn::before, #mint .container .btn::after {
+    width: 8.267vw;
   }
   #mint .main-title {
     font-size: 10.133vw;
-    line-height: 1.5263157895;
-    margin: 20.533vw 0 7.2vw 0;
+    line-height: 12.8vw;
+    margin: 25.533vw 0 7.2vw 0;
   }
   #mint .main-text {
-    font-size: 5.333vw;
-    line-height: 1.5;
-    letter-spacing: -0.133vw;
+    font-size: 4vw;
+    line-height: 6.4vw;
+    letter-spacing: -0.02em;
   }
   .footer .socials {
     flex-direction: column;
