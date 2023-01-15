@@ -98,34 +98,6 @@
   .main .water-blur1 {
     height: 52.083vw;
   }
-  .main .header .header__logo {
-    width: 24.74vw;
-  }
-  .main .header .header__right-block {
-    gap: 5.208vw;
-  }
-  .main .header .header__right-block .header__nav {
-    display: none;
-  }
-  .main .header .header__right-block .header__button {
-    width: 18.88vw;
-    height: 5.208vw;
-    font-size: 1.953vw;
-    line-height: 2.864vw;
-    border-radius: 1.042vw;
-  }
-  .main .header .header__right-block .header__button .left-blok,
-.main .header .header__right-block .header__button .right-block {
-    width: 1.172vw;
-    gap: 0.651vw;
-  }
-  .main .header .header__right-block .header__button .left-blok span,
-.main .header .header__right-block .header__button .right-block span {
-    height: 0.26vw;
-  }
-  .main .header .header__right-block .header__button:hover {
-    border-radius: 2.344vw;
-  }
   .main .main__container {
     height: 100%;
   }

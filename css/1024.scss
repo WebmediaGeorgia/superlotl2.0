@@ -64,42 +64,6 @@
       height: 31.25vw;
       left: 0;
     }
-    .header {
-      .header__logo {
-        width: 18.555vw;
-      }
-      .header__right-block {
-        gap: 3.906vw;
-        .header__nav {
-          gap: 3.906vw;
-          a {
-            font-size: 1.465vw;
-            line-height: 2.148vw;
-            &:hover {
-              border-bottom: 1px solid #ff66c4;
-            }
-          }
-        }
-        .header__button {
-          width: 14.16vw;
-          height: 3.906vw;
-          font-size: 1.465vw;
-          line-height: 2.148vw;
-          border-radius: 0.781vw;
-          .left-blok,
-          .right-block {
-            width: 0.879vw;
-            gap: 0.488vw;
-            span {
-              height: 0.195vw;
-            }
-          }
-          &:hover {
-            border-radius: 1.758vw;
-          }
-        }
-      }
-    }
     .main__container {
       height: 100%;
       .main-inbox {

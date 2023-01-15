@@ -85,41 +85,6 @@
     height: 31.25vw;
     left: 0;
   }
-  .main .header .header__logo {
-    width: 18.555vw;
-  }
-  .main .header .header__right-block {
-    gap: 3.906vw;
-  }
-  .main .header .header__right-block .header__nav {
-    gap: 3.906vw;
-  }
-  .main .header .header__right-block .header__nav a {
-    font-size: 1.465vw;
-    line-height: 2.148vw;
-  }
-  .main .header .header__right-block .header__nav a:hover {
-    border-bottom: 1px solid #ff66c4;
-  }
-  .main .header .header__right-block .header__button {
-    width: 14.16vw;
-    height: 3.906vw;
-    font-size: 1.465vw;
-    line-height: 2.148vw;
-    border-radius: 0.781vw;
-  }
-  .main .header .header__right-block .header__button .left-blok,
-.main .header .header__right-block .header__button .right-block {
-    width: 0.879vw;
-    gap: 0.488vw;
-  }
-  .main .header .header__right-block .header__button .left-blok span,
-.main .header .header__right-block .header__button .right-block span {
-    height: 0.195vw;
-  }
-  .main .header .header__right-block .header__button:hover {
-    border-radius: 1.758vw;
-  }
   .main .main__container {
     height: 100%;
   }

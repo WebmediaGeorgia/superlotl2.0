@@ -68,35 +68,6 @@
     .water-blur1 {
       height: 52.083vw;
     }
-    .header {
-      .header__logo {
-        width: 24.74vw;
-      }
-      .header__right-block {
-        gap: 5.208vw;
-        .header__nav {
-          display: none;
-        }
-        .header__button {
-          width: 18.88vw;
-          height: 5.208vw;
-          font-size: 1.953vw;
-          line-height: 2.864vw;
-          border-radius: 1.042vw;
-          .left-blok,
-          .right-block {
-            width: 1.172vw;
-            gap: 0.651vw;
-            span {
-              height: 0.26vw;
-            }
-          }
-          &:hover {
-            border-radius: 2.344vw;
-          }
-        }
-      }
-    }
     .main__container {
       height: 100%;
       .main-title {
