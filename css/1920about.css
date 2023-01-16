@@ -528,7 +528,7 @@ a {
   transform: scale(2);
 }
 .roadmap .roadmap__container #vr.step2 .vr-buble {
-  transform: scale(3.59);
+  transform: translate(-50%, -50%) scale(3.59);
   opacity: 0.5;
 }
 .roadmap .roadmap__container #vr.step2 .text1 {
@@ -581,7 +581,7 @@ a {
 }
 .roadmap .roadmap__container #vr.step3 .vr-buble {
   transform: scale(24.7);
-  opacity: 0.5;
+  opacity: 0.1;
 }
 .roadmap .roadmap__container #vr.step3 .text1 {
   top: 0;

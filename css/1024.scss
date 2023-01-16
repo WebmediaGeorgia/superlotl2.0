@@ -21,6 +21,15 @@
   .container {
     width: 92.188vw;
   }
+
+  .header {
+    padding: 3.906vw;
+    a {
+      .logo {
+        width: 18.457vw;  
+      }
+    }
+  }
   .main {
     padding: 3.906vw;
     background-image: url(../img/main/main-background.png);

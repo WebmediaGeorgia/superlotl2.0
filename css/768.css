@@ -62,6 +62,12 @@
   .container {
     width: 89.583vw;
   }
+  .header {
+    padding: 5.208vw;
+  }
+  .header a .logo {
+    width: 24.609vw;
+  }
   .main {
     padding: 3.906vw 5.208vw 0 5.208vw;
     background-position: center -7.813vw;

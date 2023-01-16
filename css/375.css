@@ -62,6 +62,12 @@
   .container {
     width: 89.333vw;
   }
+  .header {
+    padding: 8vw 5.333vw;
+  }
+  .header a .logo {
+    width: 50.4vw;
+  }
   .main {
     height: auto;
     background-image: url(../img/main/main-background375.png);
