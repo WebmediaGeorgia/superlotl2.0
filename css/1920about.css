@@ -71,119 +71,12 @@ a {
   width: 100%;
   height: auto;
   background-color: #0d4b9e;
+  overflow: hidden;
 }
 
 .container {
   width: 1468px;
   margin: 0 auto;
-}
-
-.header {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 35px 50px 0 50px;
-}
-.header .header__logo {
-  width: 11.25vw;
-  height: auto;
-}
-.header .header__right-block {
-  display: flex;
-  align-items: center;
-  gap: 3.385vw;
-}
-.header .header__right-block .header__nav {
-  display: flex;
-  align-items: center;
-  gap: 2.604vw;
-}
-.header .header__right-block .header__nav a {
-  text-decoration: none;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 0.833vw;
-  line-height: 1.25vw;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: #ffffff;
-  transition: all 0.3s;
-}
-.header .header__right-block .header__nav a:hover {
-  border-bottom: 0.052vw solid #ff66c4;
-  color: #ff66c4;
-}
-.header .header__right-block .header__button {
-  padding: 0;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #ffffff;
-  border-radius: 0.417vw;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 0.833vw;
-  line-height: 1.25vw;
-  text-align: center;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: #07031f;
-  border: none;
-  width: 8.177vw;
-  height: 2.292vw;
-  transition: all 0.3s;
-  letter-spacing: -0.02em;
-}
-.header .header__right-block .header__button .left-blok {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.26vw;
-  width: 0.677vw;
-  transition: all 0.3s;
-}
-.header .header__right-block .header__button .left-blok span {
-  width: 100%;
-  background-color: #ff66c4;
-  height: 0.104vw;
-}
-.header .header__right-block .header__button .right-block {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.26vw;
-  width: 0.677vw;
-  transition: all 0.3s;
-}
-.header .header__right-block .header__button .right-block span {
-  width: 100%;
-  background-color: #ff66c4;
-  height: 0.104vw;
-}
-.header .header__right-block .header__button:hover {
-  background: #ff66c4;
-  border-radius: 0.938vw;
-  color: #ffffff;
-}
-.header .header__right-block .header__button:hover .left-blok,
-.header .header__right-block .header__button:hover .right-block {
-  opacity: 0;
 }
 
 .about {
@@ -381,14 +274,18 @@ a {
 }
 .charity .charity-axolots1 {
   position: absolute;
+  bottom: 20%;
+  left: 259px;
   width: 150px;
   height: auto;
-  bottom: 20%;
+  z-index: 2;
 }
 .charity .charity-axolots2 {
   position: absolute;
+  bottom: 16%;
+  left: 418px;
   width: 238px;
-  bottom: 20%;
+  z-index: 2;
 }
 .charity .heart-container {
   position: absolute;
@@ -451,4 +348,271 @@ a {
 }
 .charity .charity__container .charity__subtitle-wrapper p a {
   color: #ff66c4;
+}
+
+.roadmap {
+  padding: 50px 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #03010d;
+}
+.roadmap .roadmap__container {
+  position: relative;
+}
+.roadmap .roadmap__container .roadmap__title {
+  font-family: "Wild World";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 68px;
+  color: #ffffff;
+  text-align: center;
+}
+.roadmap .roadmap__container #vr {
+  position: relative;
+  overflow: hidden;
+}
+.roadmap .roadmap__container #vr .code {
+  position: absolute;
+  top: 115px;
+  right: 175px;
+  width: 87px;
+  height: auto;
+  mix-blend-mode: exclusion;
+  border-radius: 10px;
+  z-index: 25;
+}
+.roadmap .roadmap__container #vr .mask {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  position: relative;
+}
+.roadmap .roadmap__container #vr .semirounds {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  transition: 0.75s ease-in-out transform, 0.75s ease-in-out opacity;
+}
+.roadmap .roadmap__container #vr .semirounds2 {
+  transform: scale(0.48);
+  opacity: 0.3;
+}
+.roadmap .roadmap__container #vr .semirounds3 {
+  transform: scale(0.2);
+  opacity: 0;
+}
+.roadmap .roadmap__container #vr .road {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  transition: 0.75s ease-in-out transform;
+}
+.roadmap .roadmap__container #vr .vr-buble {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 94px;
+  height: auto;
+  opacity: 0;
+  transition: 0.75s ease-in-out transform, 0.75s ease-in-out opacity;
+}
+.roadmap .roadmap__container #vr .vr-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 1;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: 0.75s ease-in-out transform, 0.75s ease-in-out opacity, 0.75s ease-in-out top;
+}
+.roadmap .roadmap__container #vr .vr-text p {
+  font-family: "Inter";
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+.roadmap .roadmap__container #vr .vr-text p a {
+  color: #ff66c4;
+}
+.roadmap .roadmap__container #vr .text2,
+.roadmap .roadmap__container #vr .text3 {
+  transform: translate(-50%, -50%) scale(0.5);
+  opacity: 0;
+}
+.roadmap .roadmap__container #vr .roadmap__navigation {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+}
+.roadmap .roadmap__container #vr .roadmap__navigation .navigation__button-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 65px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.roadmap .roadmap__container #vr .roadmap__navigation .navigation__button-container .background-button {
+  height: 100%;
+  position: absolute;
+  background: #ff66c4;
+  left: 0%;
+  transform: translateX(0%);
+  transition: 0.75s width, 0.75s left, 0.75s transform;
+  border-radius: 6px;
+}
+.roadmap .roadmap__container #vr .roadmap__navigation .navigation__button-container .navigation__button {
+  padding: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  border-radius: 6px;
+  background: none;
+  border: none;
+  transition: 0.35s ease-in-out color;
+  z-index: 1;
+}
+.roadmap .roadmap__container #vr .roadmap__navigation .navigation__button-container .button2:hover {
+  color: #ff66c4;
+}
+.roadmap .roadmap__container #vr .roadmap__navigation .navigation__button-container .button3:hover {
+  color: #ff66c4;
+}
+.roadmap .roadmap__container #vr .roadmap__navigation .navigation__line {
+  width: 721px;
+  height: auto;
+}
+.roadmap .roadmap__container #vr .roadmap__navigation .navigation__line path {
+  transition: 0.75s ease-in-out fill;
+}
+.roadmap .roadmap__container #vr.step2 .semirounds1 {
+  transform: scale(2);
+}
+.roadmap .roadmap__container #vr.step2 .semirounds2 {
+  transform: scale(1);
+  opacity: 1;
+}
+.roadmap .roadmap__container #vr.step2 .semirounds3 {
+  transform: scale(0.48);
+  opacity: 0.3;
+}
+.roadmap .roadmap__container #vr.step2 .road {
+  transform: scale(2);
+}
+.roadmap .roadmap__container #vr.step2 .vr-buble {
+  transform: scale(3.59);
+  opacity: 0.5;
+}
+.roadmap .roadmap__container #vr.step2 .text1 {
+  top: 0;
+  transform: translate(-50%, -300%) scale(1);
+}
+.roadmap .roadmap__container #vr.step2 .text2 {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+.roadmap .roadmap__container #vr.step2 .text3 {
+  transform: translate(-50%, -50%) scale(0.5);
+  opacity: 0;
+}
+.roadmap .roadmap__container #vr.step2 .roadmap__navigation .navigation__button-container .background-button {
+  left: 50%;
+  transform: translateX(-48%);
+}
+.roadmap .roadmap__container #vr.step2 .roadmap__navigation .navigation__button-container .button1:hover:hover {
+  color: #ff66c4;
+}
+.roadmap .roadmap__container #vr.step2 .roadmap__navigation .navigation__button-container .button2:hover:hover {
+  color: #ffffff;
+}
+.roadmap .roadmap__container #vr.step2 .roadmap__navigation .navigation__button-container .button3:hover:hover {
+  color: #ff66c4;
+}
+.roadmap .roadmap__container #vr.step2 .roadmap__navigation .navigation__line .triangle1 {
+  fill: #1c1a25;
+}
+.roadmap .roadmap__container #vr.step2 .roadmap__navigation .navigation__line .triangle2 {
+  fill: #ff66c4;
+}
+.roadmap .roadmap__container #vr.step2 .roadmap__navigation .navigation__line .triangle3 {
+  fill: #1c1a25;
+}
+.roadmap .roadmap__container #vr.step3 .semirounds1 {
+  transform: scale(2);
+}
+.roadmap .roadmap__container #vr.step3 .semirounds2 {
+  transform: scale(2);
+  opacity: 1;
+}
+.roadmap .roadmap__container #vr.step3 .semirounds3 {
+  transform: scale(1);
+  opacity: 1;
+}
+.roadmap .roadmap__container #vr.step3 .road {
+  transform: scale(4);
+}
+.roadmap .roadmap__container #vr.step3 .vr-buble {
+  transform: scale(24.7);
+  opacity: 0.5;
+}
+.roadmap .roadmap__container #vr.step3 .text1 {
+  top: 0;
+  transform: translate(-50%, -300%) scale(1);
+}
+.roadmap .roadmap__container #vr.step3 .text2 {
+  top: 0;
+  transform: translate(-50%, -300%) scale(1);
+}
+.roadmap .roadmap__container #vr.step3 .text3 {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+.roadmap .roadmap__container #vr.step3 .roadmap__navigation .navigation__button-container .background-button {
+  left: 100%;
+  transform: translateX(-99%);
+}
+.roadmap .roadmap__container #vr.step3 .roadmap__navigation .navigation__button-container .button1:hover:hover {
+  color: #ff66c4;
+}
+.roadmap .roadmap__container #vr.step3 .roadmap__navigation .navigation__button-container .button2:hover:hover {
+  color: #ff66c4;
+}
+.roadmap .roadmap__container #vr.step3 .roadmap__navigation .navigation__button-container .button3:hover:hover {
+  color: #ffffff;
+}
+.roadmap .roadmap__container #vr.step3 .roadmap__navigation .navigation__line .triangle1 {
+  fill: #1c1a25;
+}
+.roadmap .roadmap__container #vr.step3 .roadmap__navigation .navigation__line .triangle2 {
+  fill: #1c1a25;
+}
+.roadmap .roadmap__container #vr.step3 .roadmap__navigation .navigation__line .triangle3 {
+  fill: #ff66c4;
 }/*# sourceMappingURL=1920about.css.map */
