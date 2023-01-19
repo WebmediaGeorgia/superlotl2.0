@@ -23,7 +23,6 @@
     transform: scale(1.06);
   }
 }
-
 *,
 *::before,
 *::after {
@@ -53,6 +52,18 @@ a {
 .container {
   width: 1468px;
   margin: 0 auto;
+}
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 1.823vw 2.604vw;
+  z-index: 10;
+  a {
+    .logo {
+      width: 204px;
+      height: auto;
+    }
+  }
 }
 .about {
   position: relative;
@@ -242,6 +253,7 @@ a {
     bottom: 0;
     left: 0;
     width: 100%;
+    object-fit: cover;
   }
   .charity-axolots1 {
     position: absolute;
@@ -289,6 +301,7 @@ a {
   .charity__container {
     display: flex;
     z-index: 1;
+
     justify-content: space-between;
     .charity__title {
       font-family: "Wild World";
@@ -342,13 +355,13 @@ a {
     #vr {
       position: relative;
       overflow: hidden;
-      .code{
+      .code {
         position: absolute;
         top: 115px;
         right: 175px;
         width: 87px;
         height: auto;
-        mix-blend-mode:exclusion;
+        mix-blend-mode: exclusion;
         border-radius: 10px;
         z-index: 25;
       }
@@ -629,5 +642,283 @@ a {
         }
       }
     }
+  }
+}
+.story {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(13, 75, 158, 0) 0%, #0d4b9e 100%);
+    width: 100%;
+    height: 309px;
+    z-index: 3;
+  }
+  .story-header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+  }
+  .story-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .story__container {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    .story__left-block {
+      position: relative;
+      width: 651px;
+      .stone {
+        position: absolute;
+        left: -260px;
+        top: 110px;
+        width: 1042px;
+      }
+      .story__title {
+        font-family: "Wild World";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 68px;
+        color: #ffffff;
+        span {
+          color: #ff66c4;
+        }
+      }
+      .story__subtitle {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+        position: relative;
+        width: 315px;
+        display: block;
+        margin: 202px 0 0 240px;
+        img {
+          width: 80px;
+          position: absolute;
+          bottom: -6px;
+          right: 86px;
+          transform: translateY(100%);
+        }
+      }
+    }
+    .story__right-block {
+      width: 557px;
+      height: 714px;
+      background-image: url(../img/about/story/scroll.png);
+      background-size: 100% 100%;
+      padding: 107px 35px 107px 52px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        height: 638.63px;
+        background: #59a3e4;
+        filter: blur(30px);
+        display: block;
+        z-index: -1;
+      }
+      img {
+        content: url(../img/about/story/superlotl.png);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-50%);
+        display: block;
+        width: 625px;
+        height: auto;
+        z-index: -2;
+      }
+
+      .description {
+        overflow-y: scroll;
+        width: 100%;
+        height: 100%;
+        padding: 0 30px 0 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        p {
+          display: block;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: -0.02em;
+          color: #07031f;
+        }
+        &::-webkit-scrollbar {
+          width: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background-color: #07031f30;
+          border-radius: 8px;
+        }
+        &::-webkit-scrollbar-thumb {
+          box-shadow: inset 0 0 6px #07031f;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
+.footer {
+  overflow-y: hidden;
+  // height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  gap: 240px;
+  padding: 115px 0 60px 0;
+  .footer-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .footer__container {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .footer__left-block {
+      .footer__title {
+        font-family: "Wild World";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 68px;
+        color: #ffffff;
+        width: 834px;
+        img {
+          width: 536px;
+          height: auto;
+        }
+      }
+      .footer__subtitle {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0 0 0;
+        gap: 8px;
+        a {
+          color: #ff66c4;
+        }
+      }
+    }
+    .footer__mail {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 38px;
+      line-height: 46px;
+      text-align: right;
+      letter-spacing: -0.02em;
+      color: #ff66c4;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transform: translateY(-15%);
+      img {
+        width: 42.5px;
+        height: auto;
+      }
+    }
+  }
+  .social__container {
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0;
+    .social__left-block {
+      display: flex;
+      gap: 40px;
+      span {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+    }
+    .social__logo {
+      width: 174px;
+      height: auto;
+    }
+    .social {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      gap: 20px;
+      a {
+        text-decoration: none;
+        svg {
+          display: block;
+          width: 40px;
+          height: auto;
+          circle{
+            transition: .35s fill;
+          }
+        }
+        &:hover {
+          svg {
+            circle {
+              fill: #ff66c4;
+            }
+            path {
+              fill: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-aspect-ratio: 1920 / 860) and (min-width: 1201px) {
+  .about,
+  .charity,
+  .roadmap,
+  .story {
+    height: 970px;
   }
 }

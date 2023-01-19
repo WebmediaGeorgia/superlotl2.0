@@ -1,4 +1,5 @@
-let buttonPrev = document.querySelector(".button-prev"),
+window.onload = function() {
+  let buttonPrev = document.querySelector(".button-prev"),
   buttonNext = document.querySelector(".button-next"),
   slideWrapper = document.querySelector(".slide-wrapper"),
   slide = document.querySelectorAll(".slide"),
@@ -75,5 +76,6 @@ for (let i = 0; i < roadmapButton.length; i++) {
       backgroundButton.style.width = buttonWidth + 'px'
     }
   })
-  
 }
+}
+
