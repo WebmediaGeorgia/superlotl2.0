@@ -3,7 +3,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(2.344vw);
+    transform: translateY(14.5%);
   }
   100% {
     transform: translateY(0);
@@ -14,7 +14,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(2.344vw);
+    transform: translateY(14.5%);
   }
   100% {
     transform: translateY(0);
@@ -239,13 +239,12 @@ a {
   font-weight: 600;
   font-size: 0.677vw;
   line-height: 1.146vw;
-  display: flex;
-  align-items: flex-end;
   letter-spacing: -0.02em;
   color: #ffffff;
   z-index: 1;
-  transition: 0.35s transform;
-  transform-origin: bottom;
+  transition: 0.35s transform, 0.35s;
+  margin: auto 0 0 0;
+  transform-origin: bottom left;
 }
 .about .about__container .about__slider-wrapper .slider .slide-container .slide-wrapper .slide.active {
   width: 8.958vw;
@@ -253,7 +252,6 @@ a {
 }
 .about .about__container .about__slider-wrapper .slider .slide-container .slide-wrapper .slide.active span {
   transform: scale(1.23);
-  transform-origin: bottom;
 }
 .about .about__container .about__slider-wrapper .slider__description {
   width: 22.917vw;
@@ -395,7 +393,6 @@ a {
   width: 4.531vw;
   height: auto;
   mix-blend-mode: exclusion;
-  border-radius: 0.521vw;
   z-index: 25;
 }
 .roadmap .roadmap__container #vr .mask {

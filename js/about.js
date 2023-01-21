@@ -14,6 +14,7 @@ window.onload = function () {
   function countVw(a, b) {
     vw = (screen.width / a) * b;
     translateWidth = slide[0].clientWidth;
+    console.log(vw);
   }
   countVw();
 
@@ -21,20 +22,25 @@ window.onload = function () {
     buttonWidth = roadmapButton[0].clientWidth;
     backgroundButton.style.width = buttonWidth + "px";
   }
-  dynamicWidth()
+  dynamicWidth();
 
   if (screen.width >= 1281) {
     countVw(19.2, 0.1);
   }
+  if (screen.width >= 601) {
+    countVw(10.24, 0.0867);
+  }
 
   window.addEventListener("resize", function () {
+    translateWidth = slide[0].clientWidth;
     if (screen.width >= 1281) {
       countVw(19.2, 0.1);
-      translateWidth = slide[0].clientWidth;
     }
-    dynamicWidth()
+    if (screen.width >= 601) {
+      countVw(10.24, 0.0867);
+    }
+    dynamicWidth();
   });
-
 
   if (slideIndex == 0) {
     buttonPrev.classList.add("inactive");
