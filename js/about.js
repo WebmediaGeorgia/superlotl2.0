@@ -27,8 +27,11 @@ window.onload = function () {
   if (screen.width >= 1281) {
     countVw(19.2, 0.1);
   }
-  if (screen.width >= 601) {
+  if (screen.width >= 861) {
     countVw(10.24, 0.0867);
+  }
+  if (screen.width >= 601) {
+    countVw(7.68, 0.08);
   }
 
   window.addEventListener("resize", function () {
@@ -36,8 +39,11 @@ window.onload = function () {
     if (screen.width >= 1281) {
       countVw(19.2, 0.1);
     }
-    if (screen.width >= 601) {
+    if (screen.width >= 861) {
       countVw(10.24, 0.0867);
+    }
+    if (screen.width >= 601) {
+      countVw(7.68, 0.08);
     }
     dynamicWidth();
   });
