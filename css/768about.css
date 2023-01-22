@@ -297,7 +297,7 @@
     width: 4.427vw;
   }
 }
-@media only screen and (min-aspect-ratio: 768/800) and (min-width: 601px) {
+@media only screen and (min-aspect-ratio: 768/800) and (min-width: 601px) and (max-width: 860px) {
   .about,
 .charity,
 .roadmap,

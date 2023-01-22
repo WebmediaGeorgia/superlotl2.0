@@ -1,0 +1,360 @@
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 89.333vw;
+  }
+  .header {
+    padding: 5.333vw;
+    a {
+      .logo {
+        width: 50.4vw;
+      }
+    }
+  }
+  .about {
+    height: auto;
+    padding: 32vw 0 0 0;
+    .about-bg {
+      width: 150%;
+    }
+    .logo-bg {
+      top: 22.667vw;
+      right: 5.333vw;
+      width: 41.867vw;
+    }
+    .about__container {
+      .about__title {
+        font-size: 10.133vw;
+        line-height: 12.8vw;
+      }
+      .about__subtitle {
+        margin: 2.666vw 0 0 0;
+        width: 100%;
+        font-size: 4vw;
+        line-height: 6.4vw;
+      }
+      .about__description {
+        margin: 7.999vw 0 0 0;
+        font-size: 4vw;
+        line-height: 6.4vw;
+      }
+      .about__slider-wrapper {
+        margin: 7.999vw 0 0 0;
+        gap: 13.333vw;
+        .slider {
+          width: 100%;
+          position: relative;
+          justify-content: space-between;
+          .button-prev,
+          .button-next {
+            position: absolute;
+            left: 50%;
+            top: auto;
+            bottom: 0;
+            width: 14.934vw;
+            height: 6.4vw;
+            border: 1px solid #ffffff;
+            border-radius: 2.134vw;
+            transform: none;
+            img {
+              width: 9.066vw;
+              height: 2.666vw;
+            }
+            &:hover {
+              border: 1px solid #ff66c4;
+            }
+            &.inactive {
+              &:hover {
+                border: 1px solid #ffffff;
+              }
+            }
+          }
+          .button-next {
+            transform: translate(1.333vw, calc(100% + 5.333vw));
+            img {
+              transform: rotate(180deg);
+            }
+          }
+          .button-prev {
+            transform: translate(calc(-100% - 1.333vw), calc(100% + 20px));
+          }
+
+          .slide-container {
+            width: 100%;
+            overflow: visible;
+            .slide-wrapper {
+              gap: 2.134vw;
+              .slide {
+                width: 29.866vw;
+                height: 29.866vw;
+                padding: 0 3.201vw 3.201vw 3.201vw;
+                border-radius: 1.849vw 1.849vw 0 0;
+                span {
+                  font-size: 3.005vw;
+                  line-height: 5.067vw;
+                }
+                &.active {
+                  width: 37.867vw;
+                  height: 37.867vw;
+                  span {
+                    transform: scale(1.26);
+                  }
+                }
+              }
+            }
+          }
+        }
+        .slider__description {
+          width: 100%;
+          margin: 10.667vw 0 0 0;
+          p {
+            font-size: 4.266vw;
+            line-height: 6.4vw;
+          }
+        }
+      }
+    }
+  }
+  .charity {
+    height: auto;
+    padding: 24vw 0 0 0;
+    .charity-axolots1 {
+      bottom: 10.667vw;
+      left: 5.333vw;
+      width: 20.267vw;
+    }
+    .charity-axolots2 {
+      bottom: 4.533vw;
+      left: 27.199vw;
+      width: 32.533vw;
+    }
+    .heart-container {
+      bottom: 10.4vw;
+      top: auto;
+      left: auto;
+      right: -3.2vw;
+      width: 99.734vw;
+      height: 95.734vw;
+      transform: scale(0.6);
+      transform-origin: right;
+      .heart-wrapper {
+        .heart {
+          left: 4.907vw;
+          top: 4.266vw;
+          width: 89.33vw;
+        }
+        .planet {
+          right: 0.641vw;
+          top: 12.906vw;
+          width: 82.025vw;
+        }
+      }
+    }
+    .charity__container {
+      flex-direction: column;
+      padding: 0 0 75.467vw 0;
+      .charity__title {
+        font-size: 7.467vw;
+        line-height: 10.133vw;
+      }
+      .charity__subtitle-wrapper {
+        padding: 0;
+        width: 100%;
+        gap: 6.666vw;
+        margin: 5.333vw 0 0 0;
+        p {
+          font-size: 4vw;
+          line-height: 6.4vw;
+        }
+      }
+    }
+  }
+  .roadmap {
+    height: auto;
+    padding: 24vw 0 0 0;
+    .roadmap__container {
+      .roadmap__title {
+        font-size: 7.467vw;
+        line-height: 10.133vw;
+      }
+      #vr {
+        width: 250%;
+        transform: translateX(-30%);
+        margin: 6.667vw 0 21.333vw 0;
+        .code {
+          display: none;
+        }
+        .vr-text {
+          width: 89.333vw;
+          gap: 4vw;
+          padding: 0 0 13.333vw 0;
+
+          p {
+            font-size: 4.266vw;
+            line-height: 6.4vw;
+          }
+        }
+        .roadmap__navigation {
+          gap: 5.333vw;
+          .navigation__button-container {
+            gap: 6.4vw;
+            .background-button {
+              border-radius: 1.599vw;
+            }
+            .navigation__button {
+              padding: 1.067vw 1.333vw;
+              font-size: 4.266vw;
+              line-height: 4.266vw;
+              border-radius: 1.599vw;
+            }
+          }
+          .navigation__line {
+            width: 68%;
+          }
+        }
+      }
+    }
+  }
+  .story {
+    height: auto;
+    padding: 24vw 0 0 0;
+    .story-header {
+      transform: scale(1.6);
+    }
+    &::before {
+      height: 66.666vw;
+    }
+    .story__container {
+      padding: 0;
+      .story__left-block {
+        .stone {
+          left: -25.067vw;
+          top: 0;
+          bottom: auto;
+          transform: translateY(74%);
+          width: 119.467vw;
+        }
+        .story__title {
+          font-size: 7.467vw;
+          line-height: 10.133vw;
+          span {
+            display: block;
+          }
+        }
+        .story__subtitle {
+          position: relative;
+          bottom: auto;
+          left: auto;
+          top: auto;
+          right: auto;
+          font-size: 4vw;
+          line-height: 6.4vw;
+          width: 56vw;
+          margin: 15.467vw 0 0 0;
+          img {
+            width: 14.526vw;
+            bottom: 1.599vw;
+            right: 24.128vw;
+          }
+        }
+      }
+      .story__right-block {
+        margin: 37.333vw auto 0 auto;
+        width: 80.587vw;
+        height: 108.8vw;
+        padding: 16.533vw 5.6vw 16.533vw 7.2vw;
+        position: relative;
+        &::before {
+          width: 80vw;
+          height: 104vw;
+          filter: blur(6.933vw);
+        }
+        img {
+          width: 100.885vw;
+          top: 0;
+          left: auto;
+          right: 0;
+          transform: translate(48%, -84%);
+        }
+
+        .description {
+          padding: 0 3.733vw 0 0;
+          gap: 5.577vw;
+          p {
+            font-size: 3.734vw;
+            line-height: 5.333vw;
+          }
+          &::-webkit-scrollbar {
+            width: 0.8vw;
+          }
+
+          &::-webkit-scrollbar-track {
+            background-color: #07031f30;
+            border-radius: 1.139vw;
+          }
+          &::-webkit-scrollbar-thumb {
+            box-shadow: inset 0 0 2.667vw #07031f;
+            border-radius: 1.139vw;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    overflow: hidden;
+    gap: 32vw;
+    padding: 24vw 0 12vw 0;
+    .footer-bg {
+      height: 133.333vw;
+      object-fit: cover;
+    }
+    .footer__container {
+      .footer__left-block {
+        .footer__title {
+          font-size: 7.467vw;
+          line-height: 10.133vw;
+        }
+        .footer__subtitle {
+          font-size: 3.733vw;
+          line-height: 6.4vw;
+          margin: 26.667vw 0 0 0;
+          gap: 1.599vw;
+        }
+      }
+      .footer__mail {
+        font-size: 5.867vw;
+        line-height: 7.2vw;
+        gap: 2.667vw;
+        img {
+          width: 6.667vw;
+        }
+      }
+    }
+    .social__container {
+      flex-direction: column;
+      .social__left-block {
+        gap: 4vw;
+        flex-direction: column;
+        span {
+          font-size: 3.201vw;
+          line-height: 4vw;
+        }
+      }
+      .social__logo {
+        margin: 13.333vw 0 0 0;
+        width: 46.399vw;
+      }
+      .social {
+        right: 0;
+        left: auto;
+        top: 0%;
+        gap: 4vw;
+        transform: translate(0%, 15%);
+        a {
+          svg {
+            width: 9.066vw;
+          }
+        }
+      }
+    }
+  }
+}

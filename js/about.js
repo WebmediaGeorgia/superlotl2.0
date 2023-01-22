@@ -33,6 +33,9 @@ window.onload = function () {
   if (screen.width >= 601) {
     countVw(7.68, 0.08);
   }
+  if (screen.width <= 600) {
+    countVw(.75, 0.0824);
+  }
 
   window.addEventListener("resize", function () {
     translateWidth = slide[0].clientWidth;
@@ -44,6 +47,9 @@ window.onload = function () {
     }
     if (screen.width >= 601) {
       countVw(7.68, 0.08);
+    }
+    if (screen.width <= 600) {
+      countVw(.75, 0.0824);
     }
     dynamicWidth();
   });
