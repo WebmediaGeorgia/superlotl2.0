@@ -1,0 +1,256 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  outline-style: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+a {
+  outline: none;
+  outline-style: none;
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  background-color: #03010d;
+  overflow: hidden;
+  position: relative;
+}
+.container {
+  width: 76.458vw;
+  margin: 0 auto;
+}
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 1.823vw 2.604vw;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo-link {
+    .logo {
+      width: 10.625vw;
+      height: auto;
+    }
+  }
+  .header__right-block {
+    .open-menu {
+      display: none;
+    }
+    .nav__wrapper {
+      .close-menu {
+        display: none;
+      }
+      .nav {
+        display: flex;
+        gap: 2.083vw;
+        li {
+          position: relative;
+          .item {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 0.729vw;
+            line-height: 0.885vw;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            color: #ffffff;
+            text-decoration: none;
+            transition: 0.35s color;
+          }
+          &::after {
+            content: "";
+            display: block;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 1px;
+            background: #ff66c4;
+            transition: 0.35s width;
+          }
+          &:hover {
+            .item {
+              color: #ff66c4;
+            }
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.mint {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .anime-circle {
+    position: absolute;
+    top: 15%;
+    right: 7.76vw;
+    .wrapper-circle {
+      width: 38.177vw;
+      height: 38.177vw;
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .mint__bg {
+    position: absolute;
+    top: 0;
+    left: 22.76vw;
+    height: 100%;
+    width: auto;
+    z-index: 1;
+  }
+  .mint__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .mint__right__block {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+      gap: 2.24vw;
+      .mint__title {
+        font-family: "Wild World";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3.542vw;
+        line-height: 4.583vw;
+        color: #ffffff;
+        width: 27.448vw;
+      }
+      .mint__text-container {
+        width: 26.042vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1.406vw;
+        .mint__text {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.938vw;
+          line-height: 1.354vw;
+          letter-spacing: -0.02em;
+          color: #ffffff;
+        }
+      }
+      .mint__btn {
+        margin: 0.26vw 0 0 0;
+        padding: 0;
+        width: 12.917vw;
+        height: 3.438vw;
+        background: #171d27;
+        border-radius: 0.417vw;
+        border: none;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 0.938vw;
+        line-height: 0.938vw;
+        text-align: center;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  gap: 12.5vw;
+  bottom: 0;
+  left: 0;
+  padding: 0 0 2.604vw 0;
+  .social__container {
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0;
+    .social__left-block {
+      opacity: 0;
+      display: flex;
+      gap: 2.083vw;
+      span {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 0.625vw;
+        line-height: 0.781vw;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+    }
+    .social__logo {
+      width: 9.063vw;
+      height: auto;
+    }
+    .social {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      gap: 1.042vw;
+      a {
+        text-decoration: none;
+        svg {
+          display: block;
+          width: 2.083vw;
+          height: auto;
+          circle {
+            transition: 0.35s fill;
+          }
+        }
+        &:hover {
+          svg {
+            circle {
+              fill: #ff66c4;
+            }
+            path {
+              fill: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-aspect-ratio: 1920 / 860) and (min-width: 1281px) {
+  .mint {
+    height: 50.521vw;
+  }
+}

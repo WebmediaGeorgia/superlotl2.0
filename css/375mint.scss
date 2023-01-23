@@ -1,0 +1,144 @@
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 89.333vw;
+  }
+
+  .header {
+    padding: 5.333vw;
+    .logo-link {
+      .logo {
+        width: 50.4vw;
+      }
+    }
+    .header__right-block {
+      .open-menu {
+        width: 9.6vw;
+        height: 9.6vw;
+        border-radius: 2.133vw;
+        border: 1px solid #ffffff;
+        gap: 1.067vw;
+        span {
+          width: 4.267vw;
+          height: 0.533vw;
+        }
+      }
+      .nav__wrapper {
+        padding: 5.333vw;
+        width: 65%;
+        right: -65%;
+        .close-menu {
+          width: 9.6vw;
+          height: 9.6vw;
+          border-radius: 2.133vw;
+          border: 1px solid #ffffff;
+          span {
+            width: 4.267vw;
+            height: 0.533vw;
+          }
+        }
+        .nav {
+          margin: 6.667vw 0 0 0;
+          li {
+            border-top: 1px solid #ffffff1f;
+            height: 13.333vw;
+            &:last-child {
+              border-bottom: 1px solid #ffffff1f;
+            }
+            .item {
+              font-size: 3.733vw;
+              line-height: 4.533vw;
+            }
+          }
+        }
+      }
+      &::before {
+        backdrop-filter: blur(1.067vw);
+      }
+    }
+    &.active {
+      .header__right-block {
+        &::before {
+          backdrop-filter: blur(1.067vw);
+        }
+      }
+    }
+  }
+
+  .mint {
+    height: 285.333vw;
+    align-items: flex-start;
+    .mint__bg {
+      top: 12.533vw;
+      left: 6.4vw;
+      height: 80%;
+    }
+    .anime-circle {
+      right: 18.667vw;
+      top: 20%;
+      .wrapper-circle {
+        width: 89.333vw;
+        height: 89.333vw;
+      }
+    }
+    .mint__container {
+      padding: 37.333vw 0 0 0;
+      .mint__right__block {
+        gap: 10.667vw;
+        width: 100%;
+        .mint__title {
+          font-size: 10.133vw;
+          line-height: 12.8vw;
+          width: 80vw;
+        }
+        .mint__text-container {
+          margin: 74.133vw 0 0 0;
+          width: 100%;
+          gap: 4vw;
+          .mint__text {
+            font-size: 4.267vw;
+            line-height: 6.4vw;
+          }
+        }
+        .mint__btn {
+          margin: 0;
+          width: 48vw;
+          height: 14.4vw;
+          border-radius: 2.133vw;
+          font-size: 4.267vw;
+          line-height: 4.8vw;
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 24vw 0 12vw 0;
+    .social__container {
+      flex-direction: column;
+      .social__left-block {
+        gap: 4vw;
+        flex-direction: column;
+        span {
+          font-size: 3.201vw;
+          line-height: 4vw;
+        }
+      }
+      .social__logo {
+        margin: 13.333vw 0 0 0;
+        width: 46.399vw;
+      }
+      .social {
+        right: 0;
+        left: auto;
+        top: 0%;
+        gap: 4vw;
+        transform: translate(0%, 15%);
+        a {
+          svg {
+            width: 9.066vw;
+          }
+        }
+      }
+    }
+  }
+}

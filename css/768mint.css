@@ -1,0 +1,125 @@
+@media only screen and (max-width: 860px) {
+  .container {
+    width: 89.583vw;
+  }
+  .header {
+    padding: 3.906vw 5.208vw;
+  }
+  .header .logo-link .logo {
+    width: 24.609vw;
+  }
+  .header .header__right-block .open-menu {
+    width: 4.688vw;
+    height: 4.688vw;
+    border-radius: 1.042vw;
+    border: 1px solid #ffffff;
+    gap: 0.521vw;
+  }
+  .header .header__right-block .open-menu span {
+    width: 2.083vw;
+    height: 0.26vw;
+  }
+  .header .header__right-block .nav__wrapper {
+    padding: 3.906vw 5.208vw;
+  }
+  .header .header__right-block .nav__wrapper .close-menu {
+    width: 4.688vw;
+    height: 4.688vw;
+    border-radius: 1.042vw;
+    border: 1px solid #ffffff;
+  }
+  .header .header__right-block .nav__wrapper .close-menu span {
+    width: 2.083vw;
+    height: 0.26vw;
+  }
+  .header .header__right-block .nav__wrapper .nav {
+    margin: 3.255vw 0 0 0;
+  }
+  .header .header__right-block .nav__wrapper .nav li {
+    border-top: 1px solid rgba(255, 255, 255, 0.1215686275);
+    height: 6.51vw;
+  }
+  .header .header__right-block .nav__wrapper .nav li:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1215686275);
+  }
+  .header .header__right-block .nav__wrapper .nav li .item {
+    font-size: 1.823vw;
+    line-height: 2.214vw;
+  }
+  .header .header__right-block::before {
+    -webkit-backdrop-filter: blur(0.521vw);
+            backdrop-filter: blur(0.521vw);
+  }
+  .header.active .header__right-block::before {
+    -webkit-backdrop-filter: blur(0.521vw);
+            backdrop-filter: blur(0.521vw);
+  }
+  .mint .mint__bg {
+    top: 12.891vw;
+    left: -11.589vw;
+    height: 67%;
+  }
+  .mint .anime-circle {
+    right: -2.604vw;
+    top: 8%;
+  }
+  .mint .anime-circle .wrapper-circle {
+    width: 57.292vw;
+    height: 57.292vw;
+  }
+  .mint .mint__container {
+    transform: translateY(-3%);
+  }
+  .mint .mint__container .mint__right__block {
+    gap: 5.208vw;
+    width: 100%;
+  }
+  .mint .mint__container .mint__right__block .mint__title {
+    font-size: 6.25vw;
+    line-height: 8.854vw;
+    width: 30.339vw;
+  }
+  .mint .mint__container .mint__right__block .mint__text-container {
+    margin: 24.87vw 0 0 auto;
+    width: 42.057vw;
+    gap: 2.083vw;
+  }
+  .mint .mint__container .mint__right__block .mint__text-container .mint__text {
+    font-size: 2.083vw;
+    line-height: 3.125vw;
+  }
+  .mint .mint__container .mint__right__block .mint__btn {
+    margin: 0 14.583vw 0 auto;
+    width: 27.344vw;
+    height: 7.813vw;
+    border-radius: 1.042vw;
+    font-size: 2.344vw;
+    line-height: 2.344vw;
+  }
+  .footer {
+    gap: 13.021vw;
+    padding: 13.021vw 0 7.812vw 0;
+  }
+  .footer .social__container .social__left-block {
+    gap: 1.953vw;
+    flex-direction: column;
+  }
+  .footer .social__container .social__left-block span {
+    font-size: 1.563vw;
+    line-height: 1.953vw;
+  }
+  .footer .social__container .social__logo {
+    width: 22.656vw;
+  }
+  .footer .social__container .social {
+    gap: 1.953vw;
+  }
+  .footer .social__container .social a svg {
+    width: 4.427vw;
+  }
+}
+@media only screen and (min-aspect-ratio: 768/950) and (min-width: 601px) and (max-width: 860px) {
+  .mint {
+    height: 133.333vw;
+  }
+}/*# sourceMappingURL=768mint.css.map */
