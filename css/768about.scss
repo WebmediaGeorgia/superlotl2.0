@@ -4,9 +4,59 @@
   }
   .header {
     padding: 3.906vw 5.208vw;
-    a {
+    .logo-link {
       .logo {
         width: 24.609vw;
+      }
+    }
+    .header__right-block {
+      .open-menu {
+        width: 4.688vw;
+        height: 4.688vw;
+        border-radius: 1.042vw;
+        border: 1px solid #ffffff;
+        gap: 0.521vw;
+        span {
+          width: 2.083vw;
+          height: 0.26vw;
+        }
+      }
+      .nav__wrapper {
+        padding: 3.906vw 5.208vw;
+        .close-menu {
+          width: 4.688vw;
+          height: 4.688vw;
+          border-radius: 1.042vw;
+          border: 1px solid #ffffff;
+          span {
+            width: 2.083vw;
+            height: 0.26vw;
+          }
+        }
+        .nav {
+          margin: 3.255vw 0 0 0;
+          li {
+            border-top: 1px solid #ffffff1f;
+            height: 6.51vw;
+            &:last-child {
+              border-bottom: 1px solid #ffffff1f;
+            }
+            .item {
+              font-size: 1.823vw;
+              line-height: 2.214vw;
+            }
+          }
+        }
+      }
+      &::before {
+        backdrop-filter: blur(0.521vw);
+      }
+    }
+    &.active {
+      .header__right-block {
+        &::before {
+          backdrop-filter: blur(0.521vw);
+        }
       }
     }
   }

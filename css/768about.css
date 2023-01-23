@@ -5,8 +5,54 @@
   .header {
     padding: 3.906vw 5.208vw;
   }
-  .header a .logo {
+  .header .logo-link .logo {
     width: 24.609vw;
+  }
+  .header .header__right-block .open-menu {
+    width: 4.688vw;
+    height: 4.688vw;
+    border-radius: 1.042vw;
+    border: 1px solid #ffffff;
+    gap: 0.521vw;
+  }
+  .header .header__right-block .open-menu span {
+    width: 2.083vw;
+    height: 0.26vw;
+  }
+  .header .header__right-block .nav__wrapper {
+    padding: 3.906vw 5.208vw;
+  }
+  .header .header__right-block .nav__wrapper .close-menu {
+    width: 4.688vw;
+    height: 4.688vw;
+    border-radius: 1.042vw;
+    border: 1px solid #ffffff;
+  }
+  .header .header__right-block .nav__wrapper .close-menu span {
+    width: 2.083vw;
+    height: 0.26vw;
+  }
+  .header .header__right-block .nav__wrapper .nav {
+    margin: 3.255vw 0 0 0;
+  }
+  .header .header__right-block .nav__wrapper .nav li {
+    border-top: 1px solid rgba(255, 255, 255, 0.1215686275);
+    height: 6.51vw;
+  }
+  .header .header__right-block .nav__wrapper .nav li:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1215686275);
+  }
+  .header .header__right-block .nav__wrapper .nav li .item {
+    font-size: 1.823vw;
+    line-height: 2.214vw;
+  }
+  .header .header__right-block::before {
+    -webkit-backdrop-filter: blur(0.521vw);
+            backdrop-filter: blur(0.521vw);
+  }
+  .header.active .header__right-block::before {
+    -webkit-backdrop-filter: blur(0.521vw);
+            backdrop-filter: blur(0.521vw);
   }
   .about .logo-bg {
     top: 27.344vw;

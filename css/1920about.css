@@ -72,6 +72,7 @@ a {
   height: auto;
   background-color: #0d4b9e;
   overflow: hidden;
+  position: relative;
 }
 
 .container {
@@ -84,10 +85,54 @@ a {
   width: 100%;
   padding: 1.823vw 2.604vw;
   z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.header a .logo {
+.header .logo-link .logo {
   width: 10.625vw;
   height: auto;
+}
+.header .header__right-block .open-menu {
+  display: none;
+}
+.header .header__right-block .nav__wrapper .close-menu {
+  display: none;
+}
+.header .header__right-block .nav__wrapper .nav {
+  display: flex;
+  gap: 2.083vw;
+}
+.header .header__right-block .nav__wrapper .nav li {
+  position: relative;
+}
+.header .header__right-block .nav__wrapper .nav li .item {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.729vw;
+  line-height: 0.885vw;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.35s color;
+}
+.header .header__right-block .nav__wrapper .nav li::after {
+  content: "";
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background: #ff66c4;
+  transition: 0.35s width;
+}
+.header .header__right-block .nav__wrapper .nav li:hover .item {
+  color: #ff66c4;
+}
+.header .header__right-block .nav__wrapper .nav li:hover::after {
+  width: 100%;
 }
 
 .about {
@@ -848,6 +893,7 @@ a {
   bottom: 0;
 }
 .footer .social__container .social__left-block {
+  opacity: 0;
   display: flex;
   gap: 2.083vw;
 }

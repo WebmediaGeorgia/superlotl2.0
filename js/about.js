@@ -10,7 +10,21 @@ window.onload = function () {
     slideWidth = 0,
     translateWidth = 0,
     vw,
+    header = document.querySelector('.header'),
+    openMenu = document.querySelector('.open-menu'),
+    closeMenu = document.querySelector('.close-menu'),
+    body = document.querySelector('body'),
     buttonWidth;
+
+    openMenu.addEventListener('click', function(){
+      header.classList.add('active')
+      body.style.overflow = 'hidden'
+    })
+    closeMenu.addEventListener('click', function(){
+      header.classList.remove('active')
+      body.style.overflow = 'visible'
+    })
+    
   function countVw(a, b) {
     vw = (screen.width / a) * b;
     translateWidth = slide[0].clientWidth;
