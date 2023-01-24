@@ -1,0 +1,348 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  outline-style: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-style: normal;
+}
+
+a {
+  outline: none;
+  outline-style: none;
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  background-color: #0d4b9e;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  width: 76.458vw;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 1.823vw 2.604vw;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo-link .logo {
+  width: 10.625vw;
+  height: auto;
+}
+.header .header__right-block .open-menu {
+  display: none;
+}
+.header .header__right-block .nav__wrapper .close-menu {
+  display: none;
+}
+.header .header__right-block .nav__wrapper .nav {
+  display: flex;
+  gap: 2.083vw;
+}
+.header .header__right-block .nav__wrapper .nav li {
+  position: relative;
+}
+.header .header__right-block .nav__wrapper .nav li .item {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.729vw;
+  line-height: 0.885vw;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.35s color;
+}
+.header .header__right-block .nav__wrapper .nav li::after {
+  content: "";
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background: #ff66c4;
+  transition: 0.35s width;
+}
+.header .header__right-block .nav__wrapper .nav li:hover .item {
+  color: #ff66c4;
+}
+.header .header__right-block .nav__wrapper .nav li:hover::after {
+  width: 100%;
+}
+
+.superverse {
+  position: relative;
+}
+.superverse .superverse-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.superverse .superverse__container {
+  position: relative;
+  padding: 10.156vw 0 0 0;
+  z-index: 1;
+}
+.superverse .superverse__container .susuperverse__title {
+  font-family: "Wild World";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.542vw;
+  line-height: 4.583vw;
+  color: #ffffff;
+}
+.superverse .superverse__container .superverse__slider-wrapper {
+  position: relative;
+  width: 100%;
+  height: 28.385vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.superverse .superverse__container .superverse__slider-wrapper .button-prev,
+.superverse .superverse__container .superverse__slider-wrapper .button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  margin: 0;
+  width: 2.917vw;
+  height: 1.25vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid #ffffff;
+  border-radius: 0.417vw;
+  transition: 0.3s color;
+  transform: translateY(0.938vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s background ease-out, 0.25s border ease-out, 0.2s ease-in-out opacity;
+  z-index: 3;
+}
+.superverse .superverse__container .superverse__slider-wrapper .button-prev img,
+.superverse .superverse__container .superverse__slider-wrapper .button-next img {
+  width: 1.771vw;
+  height: 0.521vw;
+}
+.superverse .superverse__container .superverse__slider-wrapper .button-prev:hover,
+.superverse .superverse__container .superverse__slider-wrapper .button-next:hover {
+  background: #ff66c4;
+  border: 1px solid #ff66c4;
+}
+.superverse .superverse__container .superverse__slider-wrapper .button-prev.inactive,
+.superverse .superverse__container .superverse__slider-wrapper .button-next.inactive {
+  opacity: 0.3;
+}
+.superverse .superverse__container .superverse__slider-wrapper .button-prev.inactive:hover,
+.superverse .superverse__container .superverse__slider-wrapper .button-next.inactive:hover {
+  border: 1px solid #ffffff;
+  background: none;
+}
+.superverse .superverse__container .superverse__slider-wrapper .button-next {
+  right: 0;
+}
+.superverse .superverse__container .superverse__slider-wrapper .button-next img {
+  transform: rotate(180deg);
+}
+.superverse .superverse__container .superverse__slider-wrapper .button-prev {
+  left: 0;
+}
+.superverse .superverse__container .superverse__slider-wrapper .button-text {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.729vw;
+  line-height: 0.885vw;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.superverse .superverse__container .superverse__slider-wrapper .slide-container {
+  z-index: 2;
+  width: 59.063vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.superverse .superverse__container .superverse__slider-wrapper .slide-container h2 {
+  font-family: "Wild World";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.5vw;
+  line-height: 3.542vw;
+  text-transform: lowercase;
+  color: #ff66c4;
+  margin: 0 auto;
+}
+.superverse .superverse__container .superverse__slider-wrapper .slide-container .line-left,
+.superverse .superverse__container .superverse__slider-wrapper .slide-container .line-right {
+  position: absolute;
+  top: 0;
+  height: 28.385vw;
+  z-index: 2;
+}
+.superverse .superverse__container .superverse__slider-wrapper .slide-container .line-left {
+  left: 0;
+  transform: translateX(40%);
+}
+.superverse .superverse__container .superverse__slider-wrapper .slide-container .line-right {
+  right: 0;
+  transform: rotate(180deg) translateX(40%);
+}
+.superverse .superverse__container .superverse__slider-wrapper .slide-container .slide-wrapper {
+  display: flex;
+  gap: 1.042vw;
+  transition: 0.35s transform;
+}
+.superverse .superverse__container .superverse__slider-wrapper .slide-container .slide-wrapper .slide {
+  width: 19.01vw;
+  height: 19.01vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer {
+  overflow-y: hidden;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12.5vw;
+  padding: 18.99vw 0 3.125vw 0;
+}
+.footer .footer-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.footer .footer__container {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .footer__container .footer__left-block .footer__title {
+  font-family: "Wild World";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.5vw;
+  line-height: 3.542vw;
+  color: #ffffff;
+  width: 43.438vw;
+}
+.footer .footer__container .footer__left-block .footer__title img {
+  width: 27.917vw;
+  height: auto;
+}
+.footer .footer__container .footer__left-block .footer__subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.938vw;
+  line-height: 1.354vw;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin: 1.563vw 0 0 0;
+  gap: 0.417vw;
+}
+.footer .footer__container .footer__left-block .footer__subtitle a {
+  color: #ff66c4;
+}
+.footer .footer__container .footer__mail {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.979vw;
+  line-height: 2.396vw;
+  text-align: right;
+  letter-spacing: -0.02em;
+  color: #ff66c4;
+  display: flex;
+  align-items: center;
+  gap: 0.833vw;
+  transform: translateY(-15%);
+}
+.footer .footer__container .footer__mail img {
+  width: 2.214vw;
+  height: auto;
+}
+.footer .social__container {
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 0;
+}
+.footer .social__container .social__left-block {
+  opacity: 0;
+  display: flex;
+  gap: 2.083vw;
+}
+.footer .social__container .social__left-block span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.625vw;
+  line-height: 0.781vw;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer .social__container .social__logo {
+  width: 9.063vw;
+  height: auto;
+}
+.footer .social__container .social {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 1.042vw;
+}
+.footer .social__container .social a {
+  text-decoration: none;
+}
+.footer .social__container .social a svg {
+  display: block;
+  width: 2.083vw;
+  height: auto;
+}
+.footer .social__container .social a svg circle {
+  transition: 0.35s fill;
+}
+.footer .social__container .social a:hover svg circle {
+  fill: #ff66c4;
+}
+.footer .social__container .social a:hover svg path {
+  fill: #ffffff;
+}/*# sourceMappingURL=1920superverse.css.map */

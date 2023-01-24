@@ -234,12 +234,12 @@ a {
   background: #ff66c4;
   border: 0.052vw solid #ff66c4;
 }
-.about .about__container .about__slider-wrapper .slider .button-prev.inactive,
-.about .about__container .about__slider-wrapper .slider .button-next.inactive {
+.about .about__container .about__slider-wrapper .slider .button-prev.active,
+.about .about__container .about__slider-wrapper .slider .button-next.active {
   opacity: 0.3;
 }
-.about .about__container .about__slider-wrapper .slider .button-prev.inactive:hover,
-.about .about__container .about__slider-wrapper .slider .button-next.inactive:hover {
+.about .about__container .about__slider-wrapper .slider .button-prev.active:hover,
+.about .about__container .about__slider-wrapper .slider .button-next.active:hover {
   border: 0.052vw solid #ffffff;
   background: none;
 }

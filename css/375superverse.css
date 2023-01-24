@@ -1,0 +1,163 @@
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 89.333vw;
+  }
+  .header {
+    padding: 5.333vw;
+  }
+  .header .logo-link .logo {
+    width: 50.4vw;
+  }
+  .header .header__right-block .open-menu {
+    width: 9.6vw;
+    height: 9.6vw;
+    border-radius: 2.133vw;
+    border: 1px solid #ffffff;
+    gap: 1.067vw;
+  }
+  .header .header__right-block .open-menu span {
+    width: 4.267vw;
+    height: 0.533vw;
+  }
+  .header .header__right-block .nav__wrapper {
+    padding: 5.333vw;
+    width: 65%;
+    right: -65%;
+  }
+  .header .header__right-block .nav__wrapper .close-menu {
+    width: 9.6vw;
+    height: 9.6vw;
+    border-radius: 2.133vw;
+    border: 1px solid #ffffff;
+  }
+  .header .header__right-block .nav__wrapper .close-menu span {
+    width: 4.267vw;
+    height: 0.533vw;
+  }
+  .header .header__right-block .nav__wrapper .nav {
+    margin: 6.667vw 0 0 0;
+  }
+  .header .header__right-block .nav__wrapper .nav li {
+    border-top: 1px solid rgba(255, 255, 255, 0.1215686275);
+    height: 13.333vw;
+  }
+  .header .header__right-block .nav__wrapper .nav li:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1215686275);
+  }
+  .header .header__right-block .nav__wrapper .nav li .item {
+    font-size: 3.733vw;
+    line-height: 4.533vw;
+  }
+  .header .header__right-block::before {
+    -webkit-backdrop-filter: blur(1.067vw);
+            backdrop-filter: blur(1.067vw);
+  }
+  .header.active .header__right-block::before {
+    -webkit-backdrop-filter: blur(1.067vw);
+            backdrop-filter: blur(1.067vw);
+  }
+  .superverse .superverse__container {
+    padding: 32vw 0 0 0;
+  }
+  .superverse .superverse__container .susuperverse__title {
+    font-size: 10.133vw;
+    line-height: 12.8vw;
+  }
+  .superverse .superverse__container .superverse__slider-wrapper {
+    transform: translateY(-8%);
+    height: 133.333vw;
+  }
+  .superverse .superverse__container .superverse__slider-wrapper .button-prev,
+.superverse .superverse__container .superverse__slider-wrapper .button-next {
+    bottom: 7%;
+    width: 14.933vw;
+    height: 6.4vw;
+    border: 1px solid #ffffff;
+    border-radius: 2.133vw;
+  }
+  .superverse .superverse__container .superverse__slider-wrapper .button-prev img,
+.superverse .superverse__container .superverse__slider-wrapper .button-next img {
+    width: 9.067vw;
+    height: 2.667vw;
+  }
+  .superverse .superverse__container .superverse__slider-wrapper .button-prev:hover,
+.superverse .superverse__container .superverse__slider-wrapper .button-next:hover {
+    border: 1px solid #ff66c4;
+  }
+  .superverse .superverse__container .superverse__slider-wrapper .button-prev.inactive:hover,
+.superverse .superverse__container .superverse__slider-wrapper .button-next.inactive:hover {
+    border: 1px solid #ffffff;
+  }
+  .superverse .superverse__container .superverse__slider-wrapper .button-next {
+    right: 0;
+  }
+  .superverse .superverse__container .superverse__slider-wrapper .button-prev {
+    left: 0;
+  }
+  .superverse .superverse__container .superverse__slider-wrapper .button-text {
+    font-size: 3.733vw;
+    line-height: 4.533vw;
+  }
+  .superverse .superverse__container .superverse__slider-wrapper .slide-container {
+    z-index: 2;
+    width: 302.4vw;
+  }
+  .superverse .superverse__container .superverse__slider-wrapper .slide-container h2 {
+    font-size: 7.467vw;
+    line-height: 10.133vw;
+    z-index: 2;
+  }
+  .superverse .superverse__container .superverse__slider-wrapper .slide-container .line-left,
+.superverse .superverse__container .superverse__slider-wrapper .slide-container .line-right {
+    height: 133.333vw;
+  }
+  .superverse .superverse__container .superverse__slider-wrapper .slide-container .line-left {
+    left: 0;
+    transform: translateX(-43%);
+  }
+  .superverse .superverse__container .superverse__slider-wrapper .slide-container .line-right {
+    right: 0;
+    transform: rotate(180deg) translateX(-43%);
+  }
+  .superverse .superverse__container .superverse__slider-wrapper .slide-container .slide-wrapper {
+    gap: 5.293vw;
+  }
+  .superverse .superverse__container .superverse__slider-wrapper .slide-container .slide-wrapper .slide {
+    width: 89.093vw;
+    height: 89.093vw;
+  }
+  .footer {
+    padding: 5vw 0 12vw 0;
+  }
+  .footer .footer-bg {
+    width: 100%;
+    height: 103.467vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .footer .social__container {
+    flex-direction: column;
+  }
+  .footer .social__container .social__left-block {
+    gap: 4vw;
+    flex-direction: column;
+  }
+  .footer .social__container .social__left-block span {
+    font-size: 3.201vw;
+    line-height: 4vw;
+  }
+  .footer .social__container .social__logo {
+    margin: 13.333vw 0 0 0;
+    width: 46.399vw;
+  }
+  .footer .social__container .social {
+    right: 0;
+    left: auto;
+    top: 0%;
+    gap: 4vw;
+    transform: translate(0%, 15%);
+  }
+  .footer .social__container .social a svg {
+    width: 9.066vw;
+  }
+}/*# sourceMappingURL=375superverse.css.map */
